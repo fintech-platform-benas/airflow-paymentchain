@@ -1,0 +1,29 @@
+[2026-01-08T20:37:48.491+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-08T20:37:48.506+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payment_processor.notify_success scheduled__2026-01-07T00:00:00+00:00 [queued]>
+[2026-01-08T20:37:48.513+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payment_processor.notify_success scheduled__2026-01-07T00:00:00+00:00 [queued]>
+[2026-01-08T20:37:48.514+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-08T20:37:48.529+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): notify_success> on 2026-01-07 00:00:00+00:00
+[2026-01-08T20:37:48.536+0000] {standard_task_runner.py:72} INFO - Started process 784 to run task
+[2026-01-08T20:37:48.539+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'payment_processor', 'notify_success', 'scheduled__2026-01-07T00:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/payment_batch_dag.py', '--cfg-path', '/tmp/tmpqdua2yfd']
+[2026-01-08T20:37:48.542+0000] {standard_task_runner.py:105} INFO - Job 21: Subtask notify_success
+[2026-01-08T20:37:48.600+0000] {task_command.py:467} INFO - Running <TaskInstance: payment_processor.notify_success scheduled__2026-01-07T00:00:00+00:00 [running]> on host d3fac7a3e3b0
+[2026-01-08T20:37:48.680+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hb' AIRFLOW_CTX_DAG_ID='payment_processor' AIRFLOW_CTX_TASK_ID='notify_success' AIRFLOW_CTX_EXECUTION_DATE='2026-01-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-07T00:00:00+00:00'
+[2026-01-08T20:37:48.682+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-08T20:37:48.682+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-08T20:37:48.683+0000] {logging_mixin.py:190} INFO - Current task name:notify_success state:running start_date:2026-01-08 20:37:48.507380+00:00
+[2026-01-08T20:37:48.684+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor and current dag run status:running
+[2026-01-08T20:37:48.685+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-08T20:37:48.686+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-08T20:37:48.688+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "✅ Batch processing completed successfully"']
+[2026-01-08T20:37:48.700+0000] {subprocess.py:99} INFO - Output:
+[2026-01-08T20:37:48.701+0000] {subprocess.py:106} INFO - ✅ Batch processing completed successfully
+[2026-01-08T20:37:48.702+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-01-08T20:37:48.723+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-08T20:37:48.724+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=payment_processor, task_id=notify_success, run_id=scheduled__2026-01-07T00:00:00+00:00, execution_date=20260107T000000, start_date=20260108T203748, end_date=20260108T203748
+[2026-01-08T20:37:48.732+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-08T20:37:48.733+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-08T20:37:48.734+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor queued_at:2026-01-08 20:37:19.782093+00:00
+[2026-01-08T20:37:48.735+0000] {logging_mixin.py:190} INFO - Task hostname:d3fac7a3e3b0 operator:BashOperator
+[2026-01-08T20:37:48.754+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-01-08T20:37:48.768+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-08T20:37:48.770+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

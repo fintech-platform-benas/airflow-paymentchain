@@ -1,0 +1,81 @@
+[2026-01-09T01:46:47.022+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-09T01:46:47.039+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor scheduled__2026-01-08T00:00:00+00:00 [queued]>
+[2026-01-09T01:46:47.051+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor scheduled__2026-01-08T00:00:00+00:00 [queued]>
+[2026-01-09T01:46:47.053+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-09T01:46:47.071+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_pyspark_processor> on 2026-01-08 00:00:00+00:00
+[2026-01-09T01:46:47.081+0000] {standard_task_runner.py:72} INFO - Started process 3365 to run task
+[2026-01-09T01:46:47.085+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'payment_processor', 'run_pyspark_processor', 'scheduled__2026-01-08T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/payment_batch_dag.py', '--cfg-path', '/tmp/tmparjvuz5w']
+[2026-01-09T01:46:47.087+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask run_pyspark_processor
+[2026-01-09T01:46:47.168+0000] {task_command.py:467} INFO - Running <TaskInstance: payment_processor.run_pyspark_processor scheduled__2026-01-08T00:00:00+00:00 [running]> on host d3fac7a3e3b0
+[2026-01-09T01:46:47.256+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hb' AIRFLOW_CTX_DAG_ID='payment_processor' AIRFLOW_CTX_TASK_ID='run_pyspark_processor' AIRFLOW_CTX_EXECUTION_DATE='2026-01-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-08T00:00:00+00:00'
+[2026-01-09T01:46:47.258+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-09T01:46:47.259+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-09T01:46:47.260+0000] {logging_mixin.py:190} INFO - Current task name:run_pyspark_processor state:running start_date:2026-01-09 01:46:47.042965+00:00
+[2026-01-09T01:46:47.261+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor and current dag run status:running
+[2026-01-09T01:46:47.262+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-09T01:46:47.264+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-09T01:46:47.266+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/payment_processor && python process_transactions.py']
+[2026-01-09T01:46:47.282+0000] {subprocess.py:99} INFO - Output:
+[2026-01-09T01:46:50.162+0000] {subprocess.py:106} INFO - Setting default log level to "WARN".
+[2026-01-09T01:46:50.163+0000] {subprocess.py:106} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2026-01-09T01:46:50.375+0000] {subprocess.py:106} INFO - 26/01/09 01:46:50 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-01-09T01:47:08.967+0000] {subprocess.py:106} INFO - [Stage 41:>                                                         (0 + 3) / 3]                                                                                ============================================================
+[2026-01-09T01:47:08.968+0000] {subprocess.py:106} INFO - PAYMENTCHAIN TRANSACTION PROCESSOR
+[2026-01-09T01:47:08.970+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T01:47:08.971+0000] {subprocess.py:106} INFO - Spark Version: 3.5.0
+[2026-01-09T01:47:08.971+0000] {subprocess.py:106} INFO - Start Time: 2026-01-09 01:46:51.633400
+[2026-01-09T01:47:08.972+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T01:47:08.973+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.974+0000] {subprocess.py:106} INFO - [1/7] Loading data...
+[2026-01-09T01:47:08.975+0000] {subprocess.py:106} INFO -   - Transactions loaded: 50000 rows
+[2026-01-09T01:47:08.976+0000] {subprocess.py:106} INFO -   - Merchants loaded: 100 rows
+[2026-01-09T01:47:08.976+0000] {subprocess.py:106} INFO -   - Exchange rates loaded: 5 rows
+[2026-01-09T01:47:08.977+0000] {subprocess.py:106} INFO -   - Fraud rules loaded
+[2026-01-09T01:47:08.978+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.979+0000] {subprocess.py:106} INFO - [2/7] Data validation and cleaning...
+[2026-01-09T01:47:08.979+0000] {subprocess.py:106} INFO -   - Invalid transactions filtered: 2558
+[2026-01-09T01:47:08.980+0000] {subprocess.py:106} INFO -   - Valid transactions: 47442
+[2026-01-09T01:47:08.981+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.982+0000] {subprocess.py:106} INFO - [3/7] Enrichment (joins with merchants and rates)...
+[2026-01-09T01:47:08.983+0000] {subprocess.py:106} INFO -   - Joined with merchants
+[2026-01-09T01:47:08.984+0000] {subprocess.py:106} INFO -   - Joined with exchange rates
+[2026-01-09T01:47:08.984+0000] {subprocess.py:106} INFO -   - Enriched transactions: 47442
+[2026-01-09T01:47:08.985+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.986+0000] {subprocess.py:106} INFO - [4/7] Applying transformations...
+[2026-01-09T01:47:08.987+0000] {subprocess.py:106} INFO -   - Transformations applied
+[2026-01-09T01:47:08.987+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.988+0000] {subprocess.py:106} INFO - [5/7] Fraud detection (window functions)...
+[2026-01-09T01:47:08.989+0000] {subprocess.py:106} INFO -   - Suspicious transactions detected: 47205
+[2026-01-09T01:47:08.990+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.990+0000] {subprocess.py:106} INFO - [6/7] Generating reports (aggregations)...
+[2026-01-09T01:47:08.991+0000] {subprocess.py:106} INFO -   - Currency report generated
+[2026-01-09T01:47:08.992+0000] {subprocess.py:106} INFO -   - Category report generated
+[2026-01-09T01:47:08.993+0000] {subprocess.py:106} INFO -   - Top merchants report generated
+[2026-01-09T01:47:08.993+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.994+0000] {subprocess.py:106} INFO - [7/7] Writing outputs...
+[2026-01-09T01:47:08.995+0000] {subprocess.py:106} INFO -   - Processed transactions saved (Parquet, partitioned)
+[2026-01-09T01:47:08.996+0000] {subprocess.py:106} INFO -   - Currency report saved (CSV)
+[2026-01-09T01:47:08.996+0000] {subprocess.py:106} INFO -   - Category report saved (CSV)
+[2026-01-09T01:47:08.997+0000] {subprocess.py:106} INFO -   - Top merchants report saved (CSV)
+[2026-01-09T01:47:08.998+0000] {subprocess.py:106} INFO -   - Fraud alerts saved (JSON)
+[2026-01-09T01:47:08.999+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:08.999+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T01:47:09.000+0000] {subprocess.py:106} INFO - PROCESSING COMPLETED SUCCESSFULLY
+[2026-01-09T01:47:09.001+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T01:47:09.002+0000] {subprocess.py:106} INFO - End Time: 2026-01-09 01:47:08.452562
+[2026-01-09T01:47:09.003+0000] {subprocess.py:106} INFO - 
+[2026-01-09T01:47:09.004+0000] {subprocess.py:106} INFO - Outputs:
+[2026-01-09T01:47:09.005+0000] {subprocess.py:106} INFO -   - output/processed/transactions/ (Parquet)
+[2026-01-09T01:47:09.006+0000] {subprocess.py:106} INFO -   - output/reports/*.csv
+[2026-01-09T01:47:09.006+0000] {subprocess.py:106} INFO -   - output/alerts/fraud_alerts.json
+[2026-01-09T01:47:09.007+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T01:47:09.382+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-01-09T01:47:09.405+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-09T01:47:09.406+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=payment_processor, task_id=run_pyspark_processor, run_id=scheduled__2026-01-08T00:00:00+00:00, execution_date=20260108T000000, start_date=20260109T014647, end_date=20260109T014709
+[2026-01-09T01:47:09.415+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-09T01:47:09.416+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-09T01:47:09.417+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor queued_at:2026-01-09 00:51:31.210597+00:00
+[2026-01-09T01:47:09.418+0000] {logging_mixin.py:190} INFO - Task hostname:d3fac7a3e3b0 operator:BashOperator
+[2026-01-09T01:47:09.460+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-01-09T01:47:09.474+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-09T01:47:09.477+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

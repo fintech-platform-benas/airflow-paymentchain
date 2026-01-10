@@ -1,0 +1,184 @@
+[2026-01-09T04:44:43.944+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-09T04:44:43.962+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-09T04:44:42.041771+00:00 [queued]>
+[2026-01-09T04:44:43.973+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-09T04:44:42.041771+00:00 [queued]>
+[2026-01-09T04:44:43.975+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-09T04:44:43.993+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_pyspark_processor> on 2026-01-09 04:44:42.041771+00:00
+[2026-01-09T04:44:44.000+0000] {standard_task_runner.py:72} INFO - Started process 1767 to run task
+[2026-01-09T04:44:44.004+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'payment_processor', 'run_pyspark_processor', 'manual__2026-01-09T04:44:42.041771+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/payment_batch_dag.py', '--cfg-path', '/tmp/tmp5ykl7bd2']
+[2026-01-09T04:44:44.006+0000] {standard_task_runner.py:105} INFO - Job 18: Subtask run_pyspark_processor
+[2026-01-09T04:44:44.064+0000] {task_command.py:467} INFO - Running <TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-09T04:44:42.041771+00:00 [running]> on host 30213ec4962e
+[2026-01-09T04:44:44.142+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='benas' AIRFLOW_CTX_DAG_ID='payment_processor' AIRFLOW_CTX_TASK_ID='run_pyspark_processor' AIRFLOW_CTX_EXECUTION_DATE='2026-01-09T04:44:42.041771+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-09T04:44:42.041771+00:00'
+[2026-01-09T04:44:44.144+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-09T04:44:44.145+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-09T04:44:44.146+0000] {logging_mixin.py:190} INFO - Current task name:run_pyspark_processor state:running start_date:2026-01-09 04:44:43.963832+00:00
+[2026-01-09T04:44:44.147+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor and current dag run status:running
+[2026-01-09T04:44:44.148+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-09T04:44:44.149+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-09T04:44:44.151+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/payment_processor && python process_transactions.py']
+[2026-01-09T04:44:44.162+0000] {subprocess.py:99} INFO - Output:
+[2026-01-09T04:44:44.751+0000] {subprocess.py:106} INFO - /home/***/.local/lib/python3.11/site-packages/pyspark/bin/load-spark-env.sh: line 68: ps: command not found
+[2026-01-09T04:44:46.566+0000] {subprocess.py:106} INFO - Setting default log level to "WARN".
+[2026-01-09T04:44:46.568+0000] {subprocess.py:106} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2026-01-09T04:44:46.775+0000] {subprocess.py:106} INFO - 26/01/09 04:44:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-01-09T04:44:47.564+0000] {subprocess.py:106} INFO - 26/01/09 04:44:47 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2026-01-09T04:44:48.754+0000] {subprocess.py:106} INFO - 26/01/09 04:44:48 WARN FileStreamSink: Assume no metadata directory. Error while looking for metadata directory in the path: s3a://***-paymentchain-dev-ben/exchange_rates.json.
+[2026-01-09T04:44:48.756+0000] {subprocess.py:106} INFO - java.lang.RuntimeException: java.lang.ClassNotFoundException: Class org.apache.hadoop.fs.s3a.S3AFileSystem not found
+[2026-01-09T04:44:48.757+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2688)
+[2026-01-09T04:44:48.758+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3431)
+[2026-01-09T04:44:48.759+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+[2026-01-09T04:44:48.760+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+[2026-01-09T04:44:48.761+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+[2026-01-09T04:44:48.762+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+[2026-01-09T04:44:48.763+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+[2026-01-09T04:44:48.764+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+[2026-01-09T04:44:48.765+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.streaming.FileStreamSink$.hasMetadata(FileStreamSink.scala:53)
+[2026-01-09T04:44:48.766+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:366)
+[2026-01-09T04:44:48.767+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+[2026-01-09T04:44:48.768+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+[2026-01-09T04:44:48.768+0000] {subprocess.py:106} INFO - 	at scala.Option.getOrElse(Option.scala:189)
+[2026-01-09T04:44:48.769+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+[2026-01-09T04:44:48.770+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:362)
+[2026-01-09T04:44:48.771+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-01-09T04:44:48.772+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-01-09T04:44:48.773+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-01-09T04:44:48.774+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2026-01-09T04:44:48.775+0000] {subprocess.py:106} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2026-01-09T04:44:48.776+0000] {subprocess.py:106} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2026-01-09T04:44:48.776+0000] {subprocess.py:106} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2026-01-09T04:44:48.777+0000] {subprocess.py:106} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2026-01-09T04:44:48.778+0000] {subprocess.py:106} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2026-01-09T04:44:48.779+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2026-01-09T04:44:48.779+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2026-01-09T04:44:48.780+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.Thread.run(Thread.java:840)
+[2026-01-09T04:44:48.781+0000] {subprocess.py:106} INFO - Caused by: java.lang.ClassNotFoundException: Class org.apache.hadoop.fs.s3a.S3AFileSystem not found
+[2026-01-09T04:44:48.782+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2592)
+[2026-01-09T04:44:48.783+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2686)
+[2026-01-09T04:44:48.783+0000] {subprocess.py:106} INFO - 	... 26 more
+[2026-01-09T04:44:48.964+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T04:44:48.965+0000] {subprocess.py:106} INFO - PAYMENTCHAIN TRANSACTION PROCESSOR (S3)
+[2026-01-09T04:44:48.966+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T04:44:48.967+0000] {subprocess.py:106} INFO - Spark Version: 3.5.0
+[2026-01-09T04:44:48.969+0000] {subprocess.py:106} INFO - Input Bucket: s3a://***-paymentchain-dev-ben
+[2026-01-09T04:44:48.970+0000] {subprocess.py:106} INFO - Output Bucket: s3a://***-paymentchain-output-ben
+[2026-01-09T04:44:48.971+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T04:44:48.972+0000] {subprocess.py:106} INFO - 
+[2026-01-09T04:44:48.973+0000] {subprocess.py:106} INFO - [1/7] Loading data from S3...
+[2026-01-09T04:44:48.973+0000] {subprocess.py:106} INFO - Intentando leer: s3a://***-paymentchain-dev-ben/exchange_rates.json
+[2026-01-09T04:44:48.974+0000] {subprocess.py:106} INFO - 
+[2026-01-09T04:44:48.975+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T04:44:48.976+0000] {subprocess.py:106} INFO - ❌ ERROR DURING PROCESSING
+[2026-01-09T04:44:48.976+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T04:44:48.977+0000] {subprocess.py:106} INFO - Error: An error occurred while calling o29.json.
+[2026-01-09T04:44:48.978+0000] {subprocess.py:106} INFO - : java.lang.RuntimeException: java.lang.ClassNotFoundException: Class org.apache.hadoop.fs.s3a.S3AFileSystem not found
+[2026-01-09T04:44:48.979+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2688)
+[2026-01-09T04:44:48.980+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.getFileSystemClass(FileSystem.java:3431)
+[2026-01-09T04:44:48.981+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3466)
+[2026-01-09T04:44:48.981+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+[2026-01-09T04:44:48.983+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+[2026-01-09T04:44:48.984+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+[2026-01-09T04:44:48.985+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+[2026-01-09T04:44:48.986+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+[2026-01-09T04:44:48.986+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$1(DataSource.scala:724)
+[2026-01-09T04:44:48.987+0000] {subprocess.py:106} INFO - 	at scala.collection.immutable.List.map(List.scala:293)
+[2026-01-09T04:44:48.988+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.checkAndGlobPathIfNecessary(DataSource.scala:722)
+[2026-01-09T04:44:48.989+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.checkAndGlobPathIfNecessary(DataSource.scala:551)
+[2026-01-09T04:44:48.990+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:404)
+[2026-01-09T04:44:48.990+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+[2026-01-09T04:44:48.991+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+[2026-01-09T04:44:48.992+0000] {subprocess.py:106} INFO - 	at scala.Option.getOrElse(Option.scala:189)
+[2026-01-09T04:44:48.993+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+[2026-01-09T04:44:48.994+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:362)
+[2026-01-09T04:44:48.994+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-01-09T04:44:48.995+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-01-09T04:44:48.996+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-01-09T04:44:48.997+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2026-01-09T04:44:48.998+0000] {subprocess.py:106} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2026-01-09T04:44:48.998+0000] {subprocess.py:106} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2026-01-09T04:44:48.999+0000] {subprocess.py:106} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2026-01-09T04:44:49.000+0000] {subprocess.py:106} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2026-01-09T04:44:49.001+0000] {subprocess.py:106} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2026-01-09T04:44:49.002+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2026-01-09T04:44:49.002+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2026-01-09T04:44:49.003+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.Thread.run(Thread.java:840)
+[2026-01-09T04:44:49.004+0000] {subprocess.py:106} INFO - Caused by: java.lang.ClassNotFoundException: Class org.apache.hadoop.fs.s3a.S3AFileSystem not found
+[2026-01-09T04:44:49.005+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:2592)
+[2026-01-09T04:44:49.006+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:2686)
+[2026-01-09T04:44:49.006+0000] {subprocess.py:106} INFO - 	... 29 more
+[2026-01-09T04:44:49.007+0000] {subprocess.py:106} INFO - 
+[2026-01-09T04:44:49.008+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T04:44:49.365+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2026-01-09T04:44:49.376+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-09T04:44:49.382+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2026-01-09T04:44:49.384+0000] {logging_mixin.py:190} INFO - Task start:2026-01-09 04:44:43.963832+00:00 end:2026-01-09 04:44:49.382418+00:00 duration:5.418586
+[2026-01-09T04:44:49.384+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): run_pyspark_processor> dag:<DAG: payment_processor> dagrun:<DagRun payment_processor @ 2026-01-09 04:44:42.041771+00:00: manual__2026-01-09T04:44:42.041771+00:00, state:running, queued_at: 2026-01-09 04:44:42.047680+00:00. externally triggered: True>
+[2026-01-09T04:44:49.385+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-09T04:44:49.386+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=payment_processor, task_id=run_pyspark_processor, run_id=manual__2026-01-09T04:44:42.041771+00:00, execution_date=20260109T044442, start_date=20260109T044443, end_date=20260109T044449
+[2026-01-09T04:44:49.399+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-09T04:44:49.402+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 18 for task run_pyspark_processor (Bash command failed. The command returned a non-zero exit code 1.; 1767)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-09T04:44:49.421+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-01-09T04:44:49.436+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-09T04:44:49.439+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

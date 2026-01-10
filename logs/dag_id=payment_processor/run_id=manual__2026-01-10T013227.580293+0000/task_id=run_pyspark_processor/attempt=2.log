@@ -1,0 +1,150 @@
+[2026-01-10T01:37:57.044+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-10T01:37:57.058+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-10T01:32:27.580293+00:00 [queued]>
+[2026-01-10T01:37:57.065+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-10T01:32:27.580293+00:00 [queued]>
+[2026-01-10T01:37:57.066+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2026-01-10T01:37:57.086+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_pyspark_processor> on 2026-01-10 01:32:27.580293+00:00
+[2026-01-10T01:37:57.094+0000] {standard_task_runner.py:72} INFO - Started process 718 to run task
+[2026-01-10T01:37:57.099+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'payment_processor', 'run_pyspark_processor', 'manual__2026-01-10T01:32:27.580293+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/payment_batch_dag.py', '--cfg-path', '/tmp/tmpqo4njjn3']
+[2026-01-10T01:37:57.103+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask run_pyspark_processor
+[2026-01-10T01:37:57.179+0000] {task_command.py:467} INFO - Running <TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-10T01:32:27.580293+00:00 [running]> on host 436a2eb1c48d
+[2026-01-10T01:37:57.260+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='benas' AIRFLOW_CTX_DAG_ID='payment_processor' AIRFLOW_CTX_TASK_ID='run_pyspark_processor' AIRFLOW_CTX_EXECUTION_DATE='2026-01-10T01:32:27.580293+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-10T01:32:27.580293+00:00'
+[2026-01-10T01:37:57.264+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-10T01:37:57.265+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-10T01:37:57.266+0000] {logging_mixin.py:190} INFO - Current task name:run_pyspark_processor state:running start_date:2026-01-10 01:37:57.059586+00:00
+[2026-01-10T01:37:57.266+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor and current dag run status:running
+[2026-01-10T01:37:57.267+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-10T01:37:57.269+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-10T01:37:57.270+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/payment_processor && python process_transactions.py']
+[2026-01-10T01:37:57.280+0000] {subprocess.py:99} INFO - Output:
+[2026-01-10T01:37:59.156+0000] {subprocess.py:106} INFO - 26/01/10 01:37:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-01-10T01:37:59.347+0000] {subprocess.py:106} INFO - Setting default log level to "WARN".
+[2026-01-10T01:37:59.348+0000] {subprocess.py:106} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2026-01-10T01:38:04.218+0000] {subprocess.py:106} INFO - 26/01/10 01:38:04 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2026-01-10T01:38:23.459+0000] {subprocess.py:106} INFO - [Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 7:>                                                          (0 + 1) / 1]                                                                                [Stage 23:>                                                         (0 + 1) / 1]                                                                                ============================================================
+[2026-01-10T01:38:23.464+0000] {subprocess.py:106} INFO - PAYMENTCHAIN TRANSACTION PROCESSOR (S3)
+[2026-01-10T01:38:23.469+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-10T01:38:23.474+0000] {subprocess.py:106} INFO - Spark Version: 3.5.0
+[2026-01-10T01:38:23.479+0000] {subprocess.py:106} INFO - Input Bucket: s3a://***-paymentchain-dev-ben
+[2026-01-10T01:38:23.484+0000] {subprocess.py:106} INFO - Output Bucket: s3a://***-paymentchain-output-ben
+[2026-01-10T01:38:23.489+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-10T01:38:23.493+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.499+0000] {subprocess.py:106} INFO - [1/7] Loading data from S3...
+[2026-01-10T01:38:23.503+0000] {subprocess.py:106} INFO - Intentando leer: s3a://***-paymentchain-dev-ben/exchange_rates.json
+[2026-01-10T01:38:23.508+0000] {subprocess.py:106} INFO - Esquema: StructType([StructField('currency', StringType(), True), StructField('last_update', StringType(), True), StructField('rate', DoubleType(), True)])
+[2026-01-10T01:38:23.513+0000] {subprocess.py:106} INFO - Count: 5
+[2026-01-10T01:38:23.519+0000] {subprocess.py:106} INFO - +--------+-----------+------+
+[2026-01-10T01:38:23.524+0000] {subprocess.py:106} INFO - |currency|last_update|  rate|
+[2026-01-10T01:38:23.529+0000] {subprocess.py:106} INFO - +--------+-----------+------+
+[2026-01-10T01:38:23.534+0000] {subprocess.py:106} INFO - |     EUR| 2024-01-01|   1.0|
+[2026-01-10T01:38:23.539+0000] {subprocess.py:106} INFO - |     USD| 2024-01-01|  0.85|
+[2026-01-10T01:38:23.545+0000] {subprocess.py:106} INFO - |     GBP| 2024-01-01|  1.15|
+[2026-01-10T01:38:23.550+0000] {subprocess.py:106} INFO - |     JPY| 2024-01-01|0.0065|
+[2026-01-10T01:38:23.556+0000] {subprocess.py:106} INFO - |     CHF| 2024-01-01|  0.95|
+[2026-01-10T01:38:23.563+0000] {subprocess.py:106} INFO - +--------+-----------+------+
+[2026-01-10T01:38:23.569+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.574+0000] {subprocess.py:106} INFO -   ✅ Transactions loaded: 50000 rows
+[2026-01-10T01:38:23.583+0000] {subprocess.py:106} INFO -   ✅ Merchants loaded: 100 rows
+[2026-01-10T01:38:23.588+0000] {subprocess.py:106} INFO -   ✅ Fraud rules loaded
+[2026-01-10T01:38:23.593+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.598+0000] {subprocess.py:106} INFO - [2/7] Data validation and cleaning...
+[2026-01-10T01:38:23.603+0000] {subprocess.py:106} INFO -   - Invalid transactions filtered: 2558
+[2026-01-10T01:38:23.608+0000] {subprocess.py:106} INFO -   - Valid transactions: 47442
+[2026-01-10T01:38:23.613+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.619+0000] {subprocess.py:106} INFO - [3/7] Enrichment (joins with merchants and rates)...
+[2026-01-10T01:38:23.624+0000] {subprocess.py:106} INFO -   - Joined with merchants
+[2026-01-10T01:38:23.629+0000] {subprocess.py:106} INFO -   - Joined with exchange rates
+[2026-01-10T01:38:23.634+0000] {subprocess.py:106} INFO -   - Enriched transactions: 47442
+[2026-01-10T01:38:23.639+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.645+0000] {subprocess.py:106} INFO - [4/7] Applying transformations...
+[2026-01-10T01:38:23.649+0000] {subprocess.py:106} INFO -   - Transformations applied
+[2026-01-10T01:38:23.655+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.660+0000] {subprocess.py:106} INFO - [5/7] Fraud detection (window functions)...
+[2026-01-10T01:38:23.665+0000] {subprocess.py:106} INFO - 
+[2026-01-10T01:38:23.670+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-10T01:38:23.675+0000] {subprocess.py:106} INFO - ❌ ERROR DURING PROCESSING
+[2026-01-10T01:38:23.681+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-10T01:38:23.691+0000] {subprocess.py:106} INFO - Error: Since Spark 2.3, the queries from raw JSON/CSV files are disallowed when the
+[2026-01-10T01:38:23.698+0000] {subprocess.py:106} INFO - referenced columns only include the internal corrupt record column
+[2026-01-10T01:38:23.707+0000] {subprocess.py:106} INFO - (named _corrupt_record by default). For example:
+[2026-01-10T01:38:23.712+0000] {subprocess.py:106} INFO - spark.read.schema(schema).csv(file).filter($"_corrupt_record".isNotNull).count()
+[2026-01-10T01:38:23.717+0000] {subprocess.py:106} INFO - and spark.read.schema(schema).csv(file).select("_corrupt_record").show().
+[2026-01-10T01:38:23.722+0000] {subprocess.py:106} INFO - Instead, you can cache or save the parsed results and then send the same query.
+[2026-01-10T01:38:23.731+0000] {subprocess.py:106} INFO - For example, val df = spark.read.schema(schema).csv(file).cache() and then
+[2026-01-10T01:38:23.736+0000] {subprocess.py:106} INFO - df.filter($"_corrupt_record".isNotNull).count().
+[2026-01-10T01:38:23.742+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-10T01:38:24.213+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2026-01-10T01:38:24.226+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-10T01:38:24.231+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2026-01-10T01:38:24.233+0000] {logging_mixin.py:190} INFO - Task start:2026-01-10 01:37:57.059586+00:00 end:2026-01-10 01:38:24.231106+00:00 duration:27.17152
+[2026-01-10T01:38:24.234+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): run_pyspark_processor> dag:<DAG: payment_processor> dagrun:<DagRun payment_processor @ 2026-01-10 01:32:27.580293+00:00: manual__2026-01-10T01:32:27.580293+00:00, state:running, queued_at: 2026-01-10 01:32:27.597883+00:00. externally triggered: True>
+[2026-01-10T01:38:24.235+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-10T01:38:24.237+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=payment_processor, task_id=run_pyspark_processor, run_id=manual__2026-01-10T01:32:27.580293+00:00, execution_date=20260110T013227, start_date=20260110T013757, end_date=20260110T013824
+[2026-01-10T01:38:24.249+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-10T01:38:24.251+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4 for task run_pyspark_processor (Bash command failed. The command returned a non-zero exit code 1.; 718)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-10T01:38:24.263+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-01-10T01:38:24.279+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-10T01:38:24.284+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

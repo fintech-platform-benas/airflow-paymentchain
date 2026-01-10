@@ -1,0 +1,452 @@
+[2026-01-09T03:18:56.171+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-09T03:18:56.184+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-09T03:18:54.229526+00:00 [queued]>
+[2026-01-09T03:18:56.190+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-09T03:18:54.229526+00:00 [queued]>
+[2026-01-09T03:18:56.191+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-01-09T03:18:56.202+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_pyspark_processor> on 2026-01-09 03:18:54.229526+00:00
+[2026-01-09T03:18:56.208+0000] {standard_task_runner.py:72} INFO - Started process 728 to run task
+[2026-01-09T03:18:56.211+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'payment_processor', 'run_pyspark_processor', 'manual__2026-01-09T03:18:54.229526+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/payment_batch_dag.py', '--cfg-path', '/tmp/tmpkr9jmcoh']
+[2026-01-09T03:18:56.214+0000] {standard_task_runner.py:105} INFO - Job 32: Subtask run_pyspark_processor
+[2026-01-09T03:18:56.268+0000] {task_command.py:467} INFO - Running <TaskInstance: payment_processor.run_pyspark_processor manual__2026-01-09T03:18:54.229526+00:00 [running]> on host 3df3ffb4789e
+[2026-01-09T03:18:56.339+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hb' AIRFLOW_CTX_DAG_ID='payment_processor' AIRFLOW_CTX_TASK_ID='run_pyspark_processor' AIRFLOW_CTX_EXECUTION_DATE='2026-01-09T03:18:54.229526+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-09T03:18:54.229526+00:00'
+[2026-01-09T03:18:56.341+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-09T03:18:56.342+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-09T03:18:56.343+0000] {logging_mixin.py:190} INFO - Current task name:run_pyspark_processor state:running start_date:2026-01-09 03:18:56.186019+00:00
+[2026-01-09T03:18:56.344+0000] {logging_mixin.py:190} INFO - Dag name:payment_processor and current dag run status:running
+[2026-01-09T03:18:56.345+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-09T03:18:56.346+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-01-09T03:18:56.348+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', '\n    cd /opt/***/payment_processor &&     spark-submit       --jars /opt/***/payment_processor/jars/hadoop-aws-3.3.4.jar,/opt/***/payment_processor/jars/aws-java-sdk-bundle-1.12.262.jar       process_transactions.py\n    ']
+[2026-01-09T03:18:56.359+0000] {subprocess.py:99} INFO - Output:
+[2026-01-09T03:18:56.426+0000] {subprocess.py:106} INFO - /home/***/.local/lib/python3.11/site-packages/pyspark/bin/load-spark-env.sh: line 68: ps: command not found
+[2026-01-09T03:18:57.706+0000] {subprocess.py:106} INFO - 26/01/09 03:18:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-01-09T03:18:59.150+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkContext: Running Spark version 3.5.0
+[2026-01-09T03:18:59.152+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkContext: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+[2026-01-09T03:18:59.153+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkContext: Java version 17.0.17
+[2026-01-09T03:18:59.180+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO ResourceUtils: ==============================================================
+[2026-01-09T03:18:59.181+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2026-01-09T03:18:59.183+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO ResourceUtils: ==============================================================
+[2026-01-09T03:18:59.184+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkContext: Submitted application: PaymentChain-Processor-S3
+[2026-01-09T03:18:59.206+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2026-01-09T03:18:59.214+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO ResourceProfile: Limiting resource is cpu
+[2026-01-09T03:18:59.216+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2026-01-09T03:18:59.266+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SecurityManager: Changing view acls to: ***
+[2026-01-09T03:18:59.267+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SecurityManager: Changing modify acls to: ***
+[2026-01-09T03:18:59.269+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SecurityManager: Changing view acls groups to:
+[2026-01-09T03:18:59.270+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SecurityManager: Changing modify acls groups to:
+[2026-01-09T03:18:59.271+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: ***; groups with view permissions: EMPTY; users with modify permissions: ***; groups with modify permissions: EMPTY
+[2026-01-09T03:18:59.463+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Utils: Successfully started service 'sparkDriver' on port 42339.
+[2026-01-09T03:18:59.488+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkEnv: Registering MapOutputTracker
+[2026-01-09T03:18:59.517+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkEnv: Registering BlockManagerMaster
+[2026-01-09T03:18:59.531+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2026-01-09T03:18:59.532+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2026-01-09T03:18:59.536+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2026-01-09T03:18:59.560+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-9acad366-e210-408a-b077-fb779456f1ce
+[2026-01-09T03:18:59.573+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2026-01-09T03:18:59.589+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkEnv: Registering OutputCommitCoordinator
+[2026-01-09T03:18:59.718+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2026-01-09T03:18:59.787+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2026-01-09T03:18:59.825+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkContext: Added JAR file:///opt/***/payment_processor/jars/hadoop-aws-3.3.4.jar at spark://3df3ffb4789e:42339/jars/hadoop-aws-3.3.4.jar with timestamp 1767928739142
+[2026-01-09T03:18:59.826+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO SparkContext: Added JAR file:///opt/***/payment_processor/jars/aws-java-sdk-bundle-1.12.262.jar at spark://3df3ffb4789e:42339/jars/aws-java-sdk-bundle-1.12.262.jar with timestamp 1767928739142
+[2026-01-09T03:18:59.881+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Starting executor ID driver on host 3df3ffb4789e
+[2026-01-09T03:18:59.883+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+[2026-01-09T03:18:59.884+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Java version 17.0.17
+[2026-01-09T03:18:59.889+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2026-01-09T03:18:59.892+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@496b2882 for default.
+[2026-01-09T03:18:59.903+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Fetching spark://3df3ffb4789e:42339/jars/hadoop-aws-3.3.4.jar with timestamp 1767928739142
+[2026-01-09T03:18:59.952+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO TransportClientFactory: Successfully created connection to 3df3ffb4789e/172.20.0.6:42339 after 23 ms (0 ms spent in bootstraps)
+[2026-01-09T03:18:59.957+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Utils: Fetching spark://3df3ffb4789e:42339/jars/hadoop-aws-3.3.4.jar to /tmp/spark-1de2e5e6-a6e3-4cd5-8ac0-791ee1234e15/userFiles-ab10822a-dabe-46a4-af3e-96c547b9ea03/fetchFileTemp6971473315186151516.tmp
+[2026-01-09T03:18:59.992+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Adding file:/tmp/spark-1de2e5e6-a6e3-4cd5-8ac0-791ee1234e15/userFiles-ab10822a-dabe-46a4-af3e-96c547b9ea03/hadoop-aws-3.3.4.jar to class loader default
+[2026-01-09T03:18:59.994+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Executor: Fetching spark://3df3ffb4789e:42339/jars/aws-java-sdk-bundle-1.12.262.jar with timestamp 1767928739142
+[2026-01-09T03:18:59.996+0000] {subprocess.py:106} INFO - 26/01/09 03:18:59 INFO Utils: Fetching spark://3df3ffb4789e:42339/jars/aws-java-sdk-bundle-1.12.262.jar to /tmp/spark-1de2e5e6-a6e3-4cd5-8ac0-791ee1234e15/userFiles-ab10822a-dabe-46a4-af3e-96c547b9ea03/fetchFileTemp7116413598777075222.tmp
+[2026-01-09T03:19:02.186+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO Executor: Adding file:/tmp/spark-1de2e5e6-a6e3-4cd5-8ac0-791ee1234e15/userFiles-ab10822a-dabe-46a4-af3e-96c547b9ea03/aws-java-sdk-bundle-1.12.262.jar to class loader default
+[2026-01-09T03:19:02.193+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46771.
+[2026-01-09T03:19:02.195+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO NettyBlockTransferService: Server created on 3df3ffb4789e:46771
+[2026-01-09T03:19:02.197+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2026-01-09T03:19:02.201+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 3df3ffb4789e, 46771, None)
+[2026-01-09T03:19:02.204+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO BlockManagerMasterEndpoint: Registering block manager 3df3ffb4789e:46771 with 434.4 MiB RAM, BlockManagerId(driver, 3df3ffb4789e, 46771, None)
+[2026-01-09T03:19:02.206+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 3df3ffb4789e, 46771, None)
+[2026-01-09T03:19:02.207+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 3df3ffb4789e, 46771, None)
+[2026-01-09T03:19:02.481+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T03:19:02.483+0000] {subprocess.py:106} INFO - PAYMENTCHAIN TRANSACTION PROCESSOR (S3)
+[2026-01-09T03:19:02.484+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T03:19:02.485+0000] {subprocess.py:106} INFO - Spark Version: 3.5.0
+[2026-01-09T03:19:02.487+0000] {subprocess.py:106} INFO - Input Bucket: s3a://***-paymentchain-dev-ben
+[2026-01-09T03:19:02.488+0000] {subprocess.py:106} INFO - Output Bucket: s3a://***-paymentchain-output-ben
+[2026-01-09T03:19:02.489+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T03:19:02.491+0000] {subprocess.py:106} INFO - 
+[2026-01-09T03:19:02.496+0000] {subprocess.py:106} INFO - [1/7] Loading data from S3...
+[2026-01-09T03:19:02.498+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2026-01-09T03:19:02.500+0000] {subprocess.py:106} INFO - 26/01/09 03:19:02 INFO SharedState: Warehouse path is 'file:/opt/***/payment_processor/spark-warehouse'.
+[2026-01-09T03:19:03.210+0000] {subprocess.py:106} INFO - 26/01/09 03:19:03 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2026-01-09T03:19:03.218+0000] {subprocess.py:106} INFO - 26/01/09 03:19:03 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+[2026-01-09T03:19:03.220+0000] {subprocess.py:106} INFO - 26/01/09 03:19:03 INFO MetricsSystemImpl: s3a-file-system metrics system started
+[2026-01-09T03:19:04.080+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 WARN InstanceMetadataServiceResourceFetcher: Fail to retrieve token
+[2026-01-09T03:19:04.081+0000] {subprocess.py:106} INFO - com.amazonaws.SdkClientException: Failed to connect to service endpoint:
+[2026-01-09T03:19:04.082+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.EC2ResourceFetcher.doReadResource(EC2ResourceFetcher.java:100)
+[2026-01-09T03:19:04.083+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.InstanceMetadataServiceResourceFetcher.getToken(InstanceMetadataServiceResourceFetcher.java:91)
+[2026-01-09T03:19:04.084+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.InstanceMetadataServiceResourceFetcher.readResource(InstanceMetadataServiceResourceFetcher.java:69)
+[2026-01-09T03:19:04.085+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.EC2ResourceFetcher.readResource(EC2ResourceFetcher.java:66)
+[2026-01-09T03:19:04.086+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.InstanceMetadataServiceCredentialsFetcher.getCredentialsEndpoint(InstanceMetadataServiceCredentialsFetcher.java:60)
+[2026-01-09T03:19:04.086+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.InstanceMetadataServiceCredentialsFetcher.getCredentialsResponse(InstanceMetadataServiceCredentialsFetcher.java:48)
+[2026-01-09T03:19:04.087+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.BaseCredentialsFetcher.fetchCredentials(BaseCredentialsFetcher.java:124)
+[2026-01-09T03:19:04.088+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.BaseCredentialsFetcher.getCredentials(BaseCredentialsFetcher.java:80)
+[2026-01-09T03:19:04.089+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.InstanceProfileCredentialsProvider.getCredentials(InstanceProfileCredentialsProvider.java:166)
+[2026-01-09T03:19:04.090+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper.getCredentials(EC2ContainerCredentialsProviderWrapper.java:75)
+[2026-01-09T03:19:04.090+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.AWSCredentialsProviderChain.getCredentials(AWSCredentialsProviderChain.java:117)
+[2026-01-09T03:19:04.092+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.AWSCredentialProviderList.getCredentials(AWSCredentialProviderList.java:177)
+[2026-01-09T03:19:04.093+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1269)
+[2026-01-09T03:19:04.094+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.runBeforeRequestHandlers(AmazonHttpClient.java:845)
+[2026-01-09T03:19:04.094+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:794)
+[2026-01-09T03:19:04.095+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:781)
+[2026-01-09T03:19:04.097+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:755)
+[2026-01-09T03:19:04.098+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:715)
+[2026-01-09T03:19:04.098+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:697)
+[2026-01-09T03:19:04.100+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:561)
+[2026-01-09T03:19:04.101+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:541)
+[2026-01-09T03:19:04.102+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5456)
+[2026-01-09T03:19:04.103+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.getBucketRegionViaHeadRequest(AmazonS3Client.java:6431)
+[2026-01-09T03:19:04.104+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.fetchRegionFromCache(AmazonS3Client.java:6404)
+[2026-01-09T03:19:04.105+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5441)
+[2026-01-09T03:19:04.106+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5403)
+[2026-01-09T03:19:04.107+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5397)
+[2026-01-09T03:19:04.108+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.listObjectsV2(AmazonS3Client.java:971)
+[2026-01-09T03:19:04.109+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$listObjects$11(S3AFileSystem.java:2595)
+[2026-01-09T03:19:04.110+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)
+[2026-01-09T03:19:04.111+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:414)
+[2026-01-09T03:19:04.112+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:377)
+[2026-01-09T03:19:04.112+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.listObjects(S3AFileSystem.java:2586)
+[2026-01-09T03:19:04.113+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.s3GetFileStatus(S3AFileSystem.java:3832)
+[2026-01-09T03:19:04.114+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.innerGetFileStatus(S3AFileSystem.java:3688)
+[2026-01-09T03:19:04.115+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$isDirectory$35(S3AFileSystem.java:4724)
+[2026-01-09T03:19:04.116+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)
+[2026-01-09T03:19:04.117+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.trackDuration(IOStatisticsBinding.java:444)
+[2026-01-09T03:19:04.118+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2337)
+[2026-01-09T03:19:04.119+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2356)
+[2026-01-09T03:19:04.119+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.isDirectory(S3AFileSystem.java:4722)
+[2026-01-09T03:19:04.120+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.streaming.FileStreamSink$.hasMetadata(FileStreamSink.scala:54)
+[2026-01-09T03:19:04.121+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:366)
+[2026-01-09T03:19:04.122+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+[2026-01-09T03:19:04.123+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+[2026-01-09T03:19:04.124+0000] {subprocess.py:106} INFO - 	at scala.Option.getOrElse(Option.scala:189)
+[2026-01-09T03:19:04.125+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+[2026-01-09T03:19:04.126+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+[2026-01-09T03:19:04.127+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-01-09T03:19:04.128+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-01-09T03:19:04.129+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-01-09T03:19:04.130+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2026-01-09T03:19:04.130+0000] {subprocess.py:106} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2026-01-09T03:19:04.131+0000] {subprocess.py:106} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2026-01-09T03:19:04.132+0000] {subprocess.py:106} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2026-01-09T03:19:04.133+0000] {subprocess.py:106} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2026-01-09T03:19:04.134+0000] {subprocess.py:106} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2026-01-09T03:19:04.136+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2026-01-09T03:19:04.137+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2026-01-09T03:19:04.137+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.Thread.run(Thread.java:840)
+[2026-01-09T03:19:04.138+0000] {subprocess.py:106} INFO - Caused by: java.net.ConnectException: Connection refused
+[2026-01-09T03:19:04.139+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+[2026-01-09T03:19:04.140+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+[2026-01-09T03:19:04.141+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+[2026-01-09T03:19:04.142+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+[2026-01-09T03:19:04.143+0000] {subprocess.py:106} INFO - 	at java.base/java.net.Socket.connect(Socket.java:633)
+[2026-01-09T03:19:04.144+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+[2026-01-09T03:19:04.145+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
+[2026-01-09T03:19:04.146+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
+[2026-01-09T03:19:04.146+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:283)
+[2026-01-09T03:19:04.148+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+[2026-01-09T03:19:04.148+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+[2026-01-09T03:19:04.149+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1329)
+[2026-01-09T03:19:04.150+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1307)
+[2026-01-09T03:19:04.151+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1148)
+[2026-01-09T03:19:04.152+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1077)
+[2026-01-09T03:19:04.153+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.ConnectionUtils.connectToEndpoint(ConnectionUtils.java:95)
+[2026-01-09T03:19:04.154+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.EC2ResourceFetcher.doReadResource(EC2ResourceFetcher.java:80)
+[2026-01-09T03:19:04.154+0000] {subprocess.py:106} INFO - 	... 59 more
+[2026-01-09T03:19:04.155+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 WARN FileStreamSink: Assume no metadata directory. Error while looking for metadata directory in the path: s3a://***-paymentchain-dev-ben/transactions.csv.
+[2026-01-09T03:19:04.156+0000] {subprocess.py:106} INFO - java.nio.file.AccessDeniedException: s3a://***-paymentchain-dev-ben/transactions.csv: org.apache.hadoop.fs.s3a.auth.NoAuthWithAWSException: No AWS Credentials provided by DefaultAWSCredentialsProviderChain : com.amazonaws.SdkClientException: Unable to load AWS credentials from any provider in the chain: [EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY)), SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey), WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName, com.amazonaws.auth.profile.ProfileCredentialsProvider@1b565dba: profile file cannot be null, com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper@9311040: Failed to connect to service endpoint: ]
+[2026-01-09T03:19:04.157+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AUtils.translateException(S3AUtils.java:212)
+[2026-01-09T03:19:04.158+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AUtils.translateException(S3AUtils.java:175)
+[2026-01-09T03:19:04.159+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.s3GetFileStatus(S3AFileSystem.java:3861)
+[2026-01-09T03:19:04.160+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.innerGetFileStatus(S3AFileSystem.java:3688)
+[2026-01-09T03:19:04.160+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$isDirectory$35(S3AFileSystem.java:4724)
+[2026-01-09T03:19:04.161+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)
+[2026-01-09T03:19:04.162+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.trackDuration(IOStatisticsBinding.java:444)
+[2026-01-09T03:19:04.163+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2337)
+[2026-01-09T03:19:04.164+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2356)
+[2026-01-09T03:19:04.165+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.isDirectory(S3AFileSystem.java:4722)
+[2026-01-09T03:19:04.166+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.streaming.FileStreamSink$.hasMetadata(FileStreamSink.scala:54)
+[2026-01-09T03:19:04.166+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:366)
+[2026-01-09T03:19:04.167+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+[2026-01-09T03:19:04.168+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+[2026-01-09T03:19:04.169+0000] {subprocess.py:106} INFO - 	at scala.Option.getOrElse(Option.scala:189)
+[2026-01-09T03:19:04.170+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+[2026-01-09T03:19:04.171+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:538)
+[2026-01-09T03:19:04.172+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2026-01-09T03:19:04.173+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2026-01-09T03:19:04.174+0000] {subprocess.py:106} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2026-01-09T03:19:04.175+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2026-01-09T03:19:04.176+0000] {subprocess.py:106} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2026-01-09T03:19:04.177+0000] {subprocess.py:106} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2026-01-09T03:19:04.178+0000] {subprocess.py:106} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2026-01-09T03:19:04.178+0000] {subprocess.py:106} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2026-01-09T03:19:04.179+0000] {subprocess.py:106} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2026-01-09T03:19:04.180+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2026-01-09T03:19:04.181+0000] {subprocess.py:106} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2026-01-09T03:19:04.182+0000] {subprocess.py:106} INFO - 	at java.base/java.lang.Thread.run(Thread.java:840)
+[2026-01-09T03:19:04.183+0000] {subprocess.py:106} INFO - Caused by: org.apache.hadoop.fs.s3a.auth.NoAuthWithAWSException: No AWS Credentials provided by DefaultAWSCredentialsProviderChain : com.amazonaws.SdkClientException: Unable to load AWS credentials from any provider in the chain: [EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY)), SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey), WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName, com.amazonaws.auth.profile.ProfileCredentialsProvider@1b565dba: profile file cannot be null, com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper@9311040: Failed to connect to service endpoint: ]
+[2026-01-09T03:19:04.184+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.AWSCredentialProviderList.getCredentials(AWSCredentialProviderList.java:216)
+[2026-01-09T03:19:04.185+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1269)
+[2026-01-09T03:19:04.186+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.runBeforeRequestHandlers(AmazonHttpClient.java:845)
+[2026-01-09T03:19:04.187+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:794)
+[2026-01-09T03:19:04.188+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:781)
+[2026-01-09T03:19:04.189+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:755)
+[2026-01-09T03:19:04.190+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:715)
+[2026-01-09T03:19:04.190+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:697)
+[2026-01-09T03:19:04.191+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:561)
+[2026-01-09T03:19:04.192+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:541)
+[2026-01-09T03:19:04.194+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5456)
+[2026-01-09T03:19:04.194+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.getBucketRegionViaHeadRequest(AmazonS3Client.java:6431)
+[2026-01-09T03:19:04.195+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.fetchRegionFromCache(AmazonS3Client.java:6404)
+[2026-01-09T03:19:04.196+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5441)
+[2026-01-09T03:19:04.198+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5403)
+[2026-01-09T03:19:04.198+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5397)
+[2026-01-09T03:19:04.200+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.listObjectsV2(AmazonS3Client.java:971)
+[2026-01-09T03:19:04.201+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$listObjects$11(S3AFileSystem.java:2595)
+[2026-01-09T03:19:04.202+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)
+[2026-01-09T03:19:04.203+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:414)
+[2026-01-09T03:19:04.203+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:377)
+[2026-01-09T03:19:04.205+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.listObjects(S3AFileSystem.java:2586)
+[2026-01-09T03:19:04.206+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.s3GetFileStatus(S3AFileSystem.java:3832)
+[2026-01-09T03:19:04.206+0000] {subprocess.py:106} INFO - 	... 26 more
+[2026-01-09T03:19:04.207+0000] {subprocess.py:106} INFO - Caused by: com.amazonaws.SdkClientException: Unable to load AWS credentials from any provider in the chain: [EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY)), SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey), WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName, com.amazonaws.auth.profile.ProfileCredentialsProvider@1b565dba: profile file cannot be null, com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper@9311040: Failed to connect to service endpoint: ]
+[2026-01-09T03:19:04.208+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.AWSCredentialsProviderChain.getCredentials(AWSCredentialsProviderChain.java:136)
+[2026-01-09T03:19:04.209+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.AWSCredentialProviderList.getCredentials(AWSCredentialProviderList.java:177)
+[2026-01-09T03:19:04.210+0000] {subprocess.py:106} INFO - 	... 48 more
+[2026-01-09T03:19:04.211+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 WARN InstanceMetadataServiceResourceFetcher: Fail to retrieve token
+[2026-01-09T03:19:04.212+0000] {subprocess.py:106} INFO - com.amazonaws.SdkClientException: Failed to connect to service endpoint:
+[2026-01-09T03:19:04.213+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.EC2ResourceFetcher.doReadResource(EC2ResourceFetcher.java:100)
+[2026-01-09T03:19:04.214+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.InstanceMetadataServiceResourceFetcher.getToken(InstanceMetadataServiceResourceFetcher.java:91)
+[2026-01-09T03:19:04.215+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.InstanceMetadataServiceResourceFetcher.readResource(InstanceMetadataServiceResourceFetcher.java:69)
+[2026-01-09T03:19:04.216+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.EC2ResourceFetcher.readResource(EC2ResourceFetcher.java:66)
+[2026-01-09T03:19:04.217+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.InstanceMetadataServiceCredentialsFetcher.getCredentialsEndpoint(InstanceMetadataServiceCredentialsFetcher.java:60)
+[2026-01-09T03:19:04.218+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.InstanceMetadataServiceCredentialsFetcher.getCredentialsResponse(InstanceMetadataServiceCredentialsFetcher.java:48)
+[2026-01-09T03:19:04.219+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.BaseCredentialsFetcher.fetchCredentials(BaseCredentialsFetcher.java:124)
+[2026-01-09T03:19:04.220+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.BaseCredentialsFetcher.getCredentials(BaseCredentialsFetcher.java:80)
+[2026-01-09T03:19:04.222+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.InstanceProfileCredentialsProvider.getCredentials(InstanceProfileCredentialsProvider.java:166)
+[2026-01-09T03:19:04.223+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper.getCredentials(EC2ContainerCredentialsProviderWrapper.java:75)
+[2026-01-09T03:19:04.224+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.AWSCredentialsProviderChain.getCredentials(AWSCredentialsProviderChain.java:117)
+[2026-01-09T03:19:04.225+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.AWSCredentialProviderList.getCredentials(AWSCredentialProviderList.java:177)
+[2026-01-09T03:19:04.226+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1269)
+[2026-01-09T03:19:04.227+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.runBeforeRequestHandlers(AmazonHttpClient.java:845)
+[2026-01-09T03:19:04.227+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:794)
+[2026-01-09T03:19:04.228+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:781)
+[2026-01-09T03:19:04.229+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:755)
+[2026-01-09T03:19:04.230+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:715)
+[2026-01-09T03:19:04.231+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:697)
+[2026-01-09T03:19:04.232+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:561)
+[2026-01-09T03:19:04.233+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:541)
+[2026-01-09T03:19:04.234+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5456)
+[2026-01-09T03:19:04.235+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.getBucketRegionViaHeadRequest(AmazonS3Client.java:6431)
+[2026-01-09T03:19:04.235+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.fetchRegionFromCache(AmazonS3Client.java:6404)
+[2026-01-09T03:19:04.236+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5441)
+[2026-01-09T03:19:04.237+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5403)
+[2026-01-09T03:19:04.238+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.getObjectMetadata(AmazonS3Client.java:1372)
+[2026-01-09T03:19:04.239+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$getObjectMetadata$10(S3AFileSystem.java:2545)
+[2026-01-09T03:19:04.240+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:414)
+[2026-01-09T03:19:04.241+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:377)
+[2026-01-09T03:19:04.242+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.getObjectMetadata(S3AFileSystem.java:2533)
+[2026-01-09T03:19:04.243+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.getObjectMetadata(S3AFileSystem.java:2513)
+[2026-01-09T03:19:04.243+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.s3GetFileStatus(S3AFileSystem.java:3776)
+[2026-01-09T03:19:04.244+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.innerGetFileStatus(S3AFileSystem.java:3688)
+[2026-01-09T03:19:04.246+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$exists$34(S3AFileSystem.java:4703)
+[2026-01-09T03:19:04.247+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)
+[2026-01-09T03:19:04.248+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.trackDuration(IOStatisticsBinding.java:444)
+[2026-01-09T03:19:04.249+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2337)
+[2026-01-09T03:19:04.249+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2356)
+[2026-01-09T03:19:04.250+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.exists(S3AFileSystem.java:4701)
+[2026-01-09T03:19:04.251+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$4(DataSource.scala:756)
+[2026-01-09T03:19:04.252+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$4$adapted(DataSource.scala:754)
+[2026-01-09T03:19:04.253+0000] {subprocess.py:106} INFO - 	at org.apache.spark.util.ThreadUtils$.$anonfun$parmap$2(ThreadUtils.scala:380)
+[2026-01-09T03:19:04.254+0000] {subprocess.py:106} INFO - 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[2026-01-09T03:19:04.255+0000] {subprocess.py:106} INFO - 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[2026-01-09T03:19:04.256+0000] {subprocess.py:106} INFO - 	at scala.util.Success.map(Try.scala:213)
+[2026-01-09T03:19:04.256+0000] {subprocess.py:106} INFO - 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[2026-01-09T03:19:04.257+0000] {subprocess.py:106} INFO - 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[2026-01-09T03:19:04.258+0000] {subprocess.py:106} INFO - 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[2026-01-09T03:19:04.259+0000] {subprocess.py:106} INFO - 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[2026-01-09T03:19:04.260+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+[2026-01-09T03:19:04.261+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+[2026-01-09T03:19:04.262+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+[2026-01-09T03:19:04.263+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+[2026-01-09T03:19:04.263+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+[2026-01-09T03:19:04.264+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+[2026-01-09T03:19:04.265+0000] {subprocess.py:106} INFO - Caused by: java.net.ConnectException: Connection refused
+[2026-01-09T03:19:04.266+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+[2026-01-09T03:19:04.267+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+[2026-01-09T03:19:04.267+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+[2026-01-09T03:19:04.268+0000] {subprocess.py:106} INFO - 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+[2026-01-09T03:19:04.269+0000] {subprocess.py:106} INFO - 	at java.base/java.net.Socket.connect(Socket.java:633)
+[2026-01-09T03:19:04.270+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+[2026-01-09T03:19:04.270+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
+[2026-01-09T03:19:04.271+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
+[2026-01-09T03:19:04.272+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:283)
+[2026-01-09T03:19:04.273+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
+[2026-01-09T03:19:04.274+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
+[2026-01-09T03:19:04.274+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1329)
+[2026-01-09T03:19:04.275+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1307)
+[2026-01-09T03:19:04.276+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1148)
+[2026-01-09T03:19:04.276+0000] {subprocess.py:106} INFO - 	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1077)
+[2026-01-09T03:19:04.277+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.ConnectionUtils.connectToEndpoint(ConnectionUtils.java:95)
+[2026-01-09T03:19:04.278+0000] {subprocess.py:106} INFO - 	at com.amazonaws.internal.EC2ResourceFetcher.doReadResource(EC2ResourceFetcher.java:80)
+[2026-01-09T03:19:04.279+0000] {subprocess.py:106} INFO - 	... 55 more
+[2026-01-09T03:19:04.279+0000] {subprocess.py:106} INFO - 
+[2026-01-09T03:19:04.280+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T03:19:04.281+0000] {subprocess.py:106} INFO - ❌ ERROR DURING PROCESSING
+[2026-01-09T03:19:04.282+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T03:19:04.282+0000] {subprocess.py:106} INFO - Error: An error occurred while calling o32.csv.
+[2026-01-09T03:19:04.283+0000] {subprocess.py:106} INFO - : java.nio.file.AccessDeniedException: s3a://***-paymentchain-dev-ben/transactions.csv: org.apache.hadoop.fs.s3a.auth.NoAuthWithAWSException: No AWS Credentials provided by DefaultAWSCredentialsProviderChain : com.amazonaws.SdkClientException: Unable to load AWS credentials from any provider in the chain: [EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY)), SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey), WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName, com.amazonaws.auth.profile.ProfileCredentialsProvider@1b565dba: profile file cannot be null, com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper@9311040: Failed to connect to service endpoint: ]
+[2026-01-09T03:19:04.284+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AUtils.translateException(S3AUtils.java:212)
+[2026-01-09T03:19:04.285+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AUtils.translateException(S3AUtils.java:175)
+[2026-01-09T03:19:04.286+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.s3GetFileStatus(S3AFileSystem.java:3799)
+[2026-01-09T03:19:04.286+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.innerGetFileStatus(S3AFileSystem.java:3688)
+[2026-01-09T03:19:04.287+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$exists$34(S3AFileSystem.java:4703)
+[2026-01-09T03:19:04.288+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.lambda$trackDurationOfOperation$5(IOStatisticsBinding.java:499)
+[2026-01-09T03:19:04.288+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.statistics.impl.IOStatisticsBinding.trackDuration(IOStatisticsBinding.java:444)
+[2026-01-09T03:19:04.289+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2337)
+[2026-01-09T03:19:04.290+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.trackDurationAndSpan(S3AFileSystem.java:2356)
+[2026-01-09T03:19:04.291+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.exists(S3AFileSystem.java:4701)
+[2026-01-09T03:19:04.292+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$4(DataSource.scala:756)
+[2026-01-09T03:19:04.292+0000] {subprocess.py:106} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$checkAndGlobPathIfNecessary$4$adapted(DataSource.scala:754)
+[2026-01-09T03:19:04.293+0000] {subprocess.py:106} INFO - 	at org.apache.spark.util.ThreadUtils$.$anonfun$parmap$2(ThreadUtils.scala:380)
+[2026-01-09T03:19:04.294+0000] {subprocess.py:106} INFO - 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[2026-01-09T03:19:04.295+0000] {subprocess.py:106} INFO - 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[2026-01-09T03:19:04.295+0000] {subprocess.py:106} INFO - 	at scala.util.Success.map(Try.scala:213)
+[2026-01-09T03:19:04.296+0000] {subprocess.py:106} INFO - 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[2026-01-09T03:19:04.298+0000] {subprocess.py:106} INFO - 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[2026-01-09T03:19:04.299+0000] {subprocess.py:106} INFO - 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[2026-01-09T03:19:04.299+0000] {subprocess.py:106} INFO - 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[2026-01-09T03:19:04.300+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+[2026-01-09T03:19:04.301+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+[2026-01-09T03:19:04.302+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+[2026-01-09T03:19:04.303+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+[2026-01-09T03:19:04.303+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+[2026-01-09T03:19:04.304+0000] {subprocess.py:106} INFO - 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+[2026-01-09T03:19:04.305+0000] {subprocess.py:106} INFO - Caused by: org.apache.hadoop.fs.s3a.auth.NoAuthWithAWSException: No AWS Credentials provided by DefaultAWSCredentialsProviderChain : com.amazonaws.SdkClientException: Unable to load AWS credentials from any provider in the chain: [EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY)), SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey), WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName, com.amazonaws.auth.profile.ProfileCredentialsProvider@1b565dba: profile file cannot be null, com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper@9311040: Failed to connect to service endpoint: ]
+[2026-01-09T03:19:04.306+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.AWSCredentialProviderList.getCredentials(AWSCredentialProviderList.java:216)
+[2026-01-09T03:19:04.307+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1269)
+[2026-01-09T03:19:04.307+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.runBeforeRequestHandlers(AmazonHttpClient.java:845)
+[2026-01-09T03:19:04.308+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:794)
+[2026-01-09T03:19:04.309+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:781)
+[2026-01-09T03:19:04.310+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:755)
+[2026-01-09T03:19:04.311+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:715)
+[2026-01-09T03:19:04.311+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:697)
+[2026-01-09T03:19:04.312+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:561)
+[2026-01-09T03:19:04.313+0000] {subprocess.py:106} INFO - 	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:541)
+[2026-01-09T03:19:04.313+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5456)
+[2026-01-09T03:19:04.314+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.getBucketRegionViaHeadRequest(AmazonS3Client.java:6431)
+[2026-01-09T03:19:04.315+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.fetchRegionFromCache(AmazonS3Client.java:6404)
+[2026-01-09T03:19:04.316+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5441)
+[2026-01-09T03:19:04.316+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5403)
+[2026-01-09T03:19:04.317+0000] {subprocess.py:106} INFO - 	at com.amazonaws.services.s3.AmazonS3Client.getObjectMetadata(AmazonS3Client.java:1372)
+[2026-01-09T03:19:04.318+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.lambda$getObjectMetadata$10(S3AFileSystem.java:2545)
+[2026-01-09T03:19:04.319+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:414)
+[2026-01-09T03:19:04.319+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.Invoker.retryUntranslated(Invoker.java:377)
+[2026-01-09T03:19:04.320+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.getObjectMetadata(S3AFileSystem.java:2533)
+[2026-01-09T03:19:04.321+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.getObjectMetadata(S3AFileSystem.java:2513)
+[2026-01-09T03:19:04.322+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.S3AFileSystem.s3GetFileStatus(S3AFileSystem.java:3776)
+[2026-01-09T03:19:04.323+0000] {subprocess.py:106} INFO - 	... 23 more
+[2026-01-09T03:19:04.324+0000] {subprocess.py:106} INFO - Caused by: com.amazonaws.SdkClientException: Unable to load AWS credentials from any provider in the chain: [EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY)), SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey), WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName, com.amazonaws.auth.profile.ProfileCredentialsProvider@1b565dba: profile file cannot be null, com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper@9311040: Failed to connect to service endpoint: ]
+[2026-01-09T03:19:04.325+0000] {subprocess.py:106} INFO - 	at com.amazonaws.auth.AWSCredentialsProviderChain.getCredentials(AWSCredentialsProviderChain.java:136)
+[2026-01-09T03:19:04.325+0000] {subprocess.py:106} INFO - 	at org.apache.hadoop.fs.s3a.AWSCredentialProviderList.getCredentials(AWSCredentialProviderList.java:177)
+[2026-01-09T03:19:04.326+0000] {subprocess.py:106} INFO - 	... 44 more
+[2026-01-09T03:19:04.327+0000] {subprocess.py:106} INFO - 
+[2026-01-09T03:19:04.328+0000] {subprocess.py:106} INFO - ============================================================
+[2026-01-09T03:19:04.329+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2026-01-09T03:19:04.330+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO SparkUI: Stopped Spark web UI at http://3df3ffb4789e:4040
+[2026-01-09T03:19:04.331+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2026-01-09T03:19:04.331+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO MemoryStore: MemoryStore cleared
+[2026-01-09T03:19:04.332+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO BlockManager: BlockManager stopped
+[2026-01-09T03:19:04.333+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2026-01-09T03:19:04.333+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2026-01-09T03:19:04.334+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO SparkContext: Successfully stopped SparkContext
+[2026-01-09T03:19:04.389+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO ShutdownHookManager: Shutdown hook called
+[2026-01-09T03:19:04.391+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO ShutdownHookManager: Deleting directory /tmp/spark-1de2e5e6-a6e3-4cd5-8ac0-791ee1234e15/pyspark-89918add-2cb2-498d-a8f2-4da0db97eac5
+[2026-01-09T03:19:04.394+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO ShutdownHookManager: Deleting directory /tmp/spark-1de2e5e6-a6e3-4cd5-8ac0-791ee1234e15
+[2026-01-09T03:19:04.397+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO ShutdownHookManager: Deleting directory /tmp/spark-fd2a0362-49de-4e01-a484-de6639028c18
+[2026-01-09T03:19:04.404+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO MetricsSystemImpl: Stopping s3a-file-system metrics system...
+[2026-01-09T03:19:04.406+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO MetricsSystemImpl: s3a-file-system metrics system stopped.
+[2026-01-09T03:19:04.407+0000] {subprocess.py:106} INFO - 26/01/09 03:19:04 INFO MetricsSystemImpl: s3a-file-system metrics system shutdown complete.
+[2026-01-09T03:19:04.448+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2026-01-09T03:19:04.458+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-09T03:19:04.672+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2026-01-09T03:19:04.674+0000] {logging_mixin.py:190} INFO - Task start:2026-01-09 03:18:56.186019+00:00 end:2026-01-09 03:19:04.672560+00:00 duration:8.486541
+[2026-01-09T03:19:04.675+0000] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): run_pyspark_processor> dag:<DAG: payment_processor> dagrun:<DagRun payment_processor @ 2026-01-09 03:18:54.229526+00:00: manual__2026-01-09T03:18:54.229526+00:00, state:running, queued_at: 2026-01-09 03:18:54.238621+00:00. externally triggered: True>
+[2026-01-09T03:19:04.676+0000] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-09T03:19:04.677+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=payment_processor, task_id=run_pyspark_processor, run_id=manual__2026-01-09T03:18:54.229526+00:00, execution_date=20260109T031854, start_date=20260109T031856, end_date=20260109T031904
+[2026-01-09T03:19:04.692+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-09T03:19:04.693+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 32 for task run_pyspark_processor (Bash command failed. The command returned a non-zero exit code 1.; 728)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-01-09T03:19:04.727+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-01-09T03:19:04.744+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-09T03:19:04.747+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

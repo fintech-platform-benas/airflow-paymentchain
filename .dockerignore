@@ -1,0 +1,44 @@
+# Excluir logs de Airflow
+logs/
+*.log
+
+# Excluir configuración local
+config/
+plugins/
+
+# Excluir archivos de entorno
+.env
+.env.*
+
+# Excluir archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Excluir archivos de Git
+.git/
+.gitignore
+
+# Excluir archivos de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Excluir entorno virtual
+.venv/
+venv/
+ENV/
+
+# Excluir archivos temporales
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db

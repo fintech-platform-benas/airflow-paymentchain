@@ -1,0 +1,1002 @@
+[2026-01-10T01:28:18.840+0000] {processor.py:186} INFO - Started process (PID=62) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:28:18.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:28:18.848+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:18.847+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:28:18.913+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:28:19.473+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.472+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:payment_processor
+[2026-01-10T01:28:19.486+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.486+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:payment_processor
+[2026-01-10T01:28:19.501+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.501+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:payment_processor
+[2026-01-10T01:28:19.514+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.513+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:payment_processor
+[2026-01-10T01:28:19.523+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.523+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:payment_processor
+[2026-01-10T01:28:19.532+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.532+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:payment_processor
+[2026-01-10T01:28:19.546+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.545+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:payment_processor
+[2026-01-10T01:28:19.547+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.547+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:28:19.573+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.573+0000] {dag.py:3262} INFO - Creating ORM DAG for payment_processor
+[2026-01-10T01:28:19.575+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:19.575+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:28:19.608+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.784 seconds
+[2026-01-10T01:28:50.090+0000] {processor.py:186} INFO - Started process (PID=132) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:28:50.092+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:28:50.102+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:50.101+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:28:50.137+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:28:50.155+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:50.155+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:28:50.168+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:28:50.168+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:28:50.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.112 seconds
+[2026-01-10T01:29:20.255+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:29:20.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:29:20.259+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:29:20.259+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:29:20.278+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:29:20.292+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:29:20.292+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:29:20.303+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:29:20.303+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:29:20.319+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T01:29:51.035+0000] {processor.py:186} INFO - Started process (PID=260) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:29:51.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:29:51.039+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:29:51.039+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:29:51.063+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:29:51.083+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:29:51.083+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:29:51.099+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:29:51.098+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:29:51.119+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.091 seconds
+[2026-01-10T01:30:21.931+0000] {processor.py:186} INFO - Started process (PID=324) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:30:21.932+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:30:21.934+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:30:21.934+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:30:21.951+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:30:21.965+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:30:21.965+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:30:21.976+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:30:21.976+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:30:21.993+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T01:30:52.275+0000] {processor.py:186} INFO - Started process (PID=388) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:30:52.277+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:30:52.281+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:30:52.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:30:52.311+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:30:52.334+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:30:52.334+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:30:52.355+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:30:52.355+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:30:52.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.113 seconds
+[2026-01-10T01:31:23.209+0000] {processor.py:186} INFO - Started process (PID=452) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:31:23.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:31:23.214+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:31:23.213+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:31:23.236+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:31:23.259+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:31:23.259+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:31:23.277+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:31:23.277+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:31:23.304+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.100 seconds
+[2026-01-10T01:31:54.166+0000] {processor.py:186} INFO - Started process (PID=516) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:31:54.167+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:31:54.171+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:31:54.170+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:31:54.195+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:31:54.217+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:31:54.217+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:31:54.233+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:31:54.233+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:31:54.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.099 seconds
+[2026-01-10T01:32:24.338+0000] {processor.py:186} INFO - Started process (PID=580) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:32:24.339+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:32:24.341+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:32:24.340+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:32:24.358+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:32:24.374+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:32:24.374+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:32:24.386+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:32:24.386+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:32:24.405+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.073 seconds
+[2026-01-10T01:32:55.265+0000] {processor.py:186} INFO - Started process (PID=645) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:32:55.266+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:32:55.268+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:32:55.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:32:55.287+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:32:55.304+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:32:55.304+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:32:55.318+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:32:55.318+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:32:55.338+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.079 seconds
+[2026-01-10T01:33:26.271+0000] {processor.py:186} INFO - Started process (PID=709) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:33:26.275+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:33:26.289+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:33:26.287+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:33:26.387+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:33:26.466+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:33:26.466+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:33:26.493+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:33:26.493+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:33:26.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.267 seconds
+[2026-01-10T01:33:57.225+0000] {processor.py:186} INFO - Started process (PID=773) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:33:57.226+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:33:57.231+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:33:57.229+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:33:57.258+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:33:57.275+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:33:57.275+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:33:57.287+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:33:57.287+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:33:57.305+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.089 seconds
+[2026-01-10T01:34:27.380+0000] {processor.py:186} INFO - Started process (PID=837) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:34:27.381+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:34:27.383+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:34:27.383+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:34:27.399+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:34:27.413+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:34:27.413+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:34:27.426+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:34:27.425+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:34:27.443+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T01:34:58.117+0000] {processor.py:186} INFO - Started process (PID=901) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:34:58.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:34:58.121+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:34:58.121+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:34:58.143+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:34:58.158+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:34:58.158+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:34:58.171+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:34:58.170+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:34:58.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.082 seconds
+[2026-01-10T01:35:28.383+0000] {processor.py:186} INFO - Started process (PID=965) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:35:28.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:35:28.397+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:35:28.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:35:28.496+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:35:28.578+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:35:28.577+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:35:28.650+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:35:28.649+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:35:28.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.328 seconds
+[2026-01-10T01:35:59.007+0000] {processor.py:186} INFO - Started process (PID=1030) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:35:59.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:35:59.010+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:35:59.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:35:59.026+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:35:59.043+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:35:59.043+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:35:59.056+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:35:59.056+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:35:59.072+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.072 seconds
+[2026-01-10T01:36:29.947+0000] {processor.py:186} INFO - Started process (PID=1094) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:36:29.948+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:36:29.950+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:36:29.950+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:36:29.968+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:36:29.984+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:36:29.984+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:36:29.996+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:36:29.996+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:36:30.014+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.072 seconds
+[2026-01-10T01:37:00.690+0000] {processor.py:186} INFO - Started process (PID=1158) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:37:00.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:37:00.694+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:37:00.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:37:00.715+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:37:00.738+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:37:00.737+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:37:00.755+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:37:00.754+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:37:00.781+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.098 seconds
+[2026-01-10T01:37:31.690+0000] {processor.py:186} INFO - Started process (PID=1222) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:37:31.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:37:31.693+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:37:31.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:37:31.710+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:37:31.728+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:37:31.728+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:37:31.742+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:37:31.742+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:37:31.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.077 seconds
+[2026-01-10T01:38:02.276+0000] {processor.py:186} INFO - Started process (PID=1286) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:38:02.277+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:38:02.280+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:38:02.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:38:02.307+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:38:02.328+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:38:02.328+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:38:02.345+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:38:02.345+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:38:02.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.105 seconds
+[2026-01-10T01:38:33.052+0000] {processor.py:186} INFO - Started process (PID=1350) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:38:33.053+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:38:33.055+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:38:33.054+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:38:33.075+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:38:33.091+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:38:33.091+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:38:33.103+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:38:33.103+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:38:33.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.073 seconds
+[2026-01-10T01:39:03.744+0000] {processor.py:186} INFO - Started process (PID=1414) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:39:03.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:39:03.749+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:39:03.749+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:39:03.770+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:39:03.785+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:39:03.785+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:39:03.796+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:39:03.796+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:39:03.813+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.078 seconds
+[2026-01-10T01:39:34.808+0000] {processor.py:186} INFO - Started process (PID=1478) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:39:34.809+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:39:34.811+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:39:34.811+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:39:34.828+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:39:34.842+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:39:34.842+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:39:34.854+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:39:34.854+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:39:34.872+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.069 seconds
+[2026-01-10T01:40:05.814+0000] {processor.py:186} INFO - Started process (PID=1542) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:40:05.815+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:40:05.817+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:40:05.817+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:40:05.833+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:40:05.848+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:40:05.848+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:40:05.860+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:40:05.860+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:40:05.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T01:40:36.833+0000] {processor.py:186} INFO - Started process (PID=1606) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:40:36.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:40:36.848+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:40:36.846+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:40:36.947+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:40:37.032+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:40:37.031+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:40:37.119+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:40:37.118+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:40:37.207+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.403 seconds
+[2026-01-10T01:41:07.433+0000] {processor.py:186} INFO - Started process (PID=1670) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:41:07.438+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:41:07.450+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:41:07.448+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:41:07.536+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:41:07.573+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:41:07.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:41:07.589+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:41:07.589+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:41:07.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.206 seconds
+[2026-01-10T01:41:38.263+0000] {processor.py:186} INFO - Started process (PID=1734) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:41:38.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:41:38.281+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:41:38.279+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:41:38.380+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:41:38.467+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:41:38.466+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:41:38.518+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:41:38.517+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:41:38.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.315 seconds
+[2026-01-10T01:42:08.653+0000] {processor.py:186} INFO - Started process (PID=1798) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:42:08.655+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:42:08.659+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:42:08.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:42:08.687+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:42:08.706+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:42:08.706+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:42:08.719+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:42:08.719+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:42:08.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.094 seconds
+[2026-01-10T01:42:39.470+0000] {processor.py:186} INFO - Started process (PID=1862) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:42:39.476+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:42:39.495+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:42:39.493+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:42:39.551+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:42:39.574+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:42:39.574+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:42:39.587+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:42:39.587+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:42:39.607+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.182 seconds
+[2026-01-10T01:43:09.794+0000] {processor.py:186} INFO - Started process (PID=1926) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:43:09.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:43:09.797+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:43:09.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:43:09.813+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:43:09.829+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:43:09.828+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:43:09.843+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:43:09.842+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:43:09.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.073 seconds
+[2026-01-10T01:43:40.192+0000] {processor.py:186} INFO - Started process (PID=1990) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:43:40.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:43:40.195+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:43:40.195+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:43:40.210+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:43:40.225+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:43:40.224+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:43:40.236+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:43:40.236+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:43:40.253+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T01:44:10.968+0000] {processor.py:186} INFO - Started process (PID=2054) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:44:10.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:44:10.985+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:44:10.983+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:44:11.081+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:44:11.140+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:44:11.140+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:44:11.185+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:44:11.184+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:44:11.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.308 seconds
+[2026-01-10T01:44:42.538+0000] {processor.py:186} INFO - Started process (PID=2118) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:44:42.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:44:42.555+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:44:42.554+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:44:42.626+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:44:42.653+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:44:42.653+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:44:42.675+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:44:42.675+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:44:42.702+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.196 seconds
+[2026-01-10T01:45:13.759+0000] {processor.py:186} INFO - Started process (PID=2182) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:45:13.764+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:45:13.776+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:45:13.775+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:45:13.875+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:45:13.932+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:45:13.932+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:45:13.978+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:45:13.978+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:45:14.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.295 seconds
+[2026-01-10T01:45:44.713+0000] {processor.py:186} INFO - Started process (PID=2246) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:45:44.713+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:45:44.716+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:45:44.715+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:45:44.733+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:45:44.747+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:45:44.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:45:44.758+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:45:44.758+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:45:44.774+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.067 seconds
+[2026-01-10T01:46:15.720+0000] {processor.py:186} INFO - Started process (PID=2310) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:46:15.721+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:46:15.723+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:46:15.723+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:46:15.741+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:46:15.756+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:46:15.756+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:46:15.767+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:46:15.767+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:46:15.786+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T01:46:46.215+0000] {processor.py:186} INFO - Started process (PID=2374) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:46:46.216+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:46:46.218+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:46:46.218+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:46:46.235+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:46:46.250+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:46:46.250+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:46:46.263+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:46:46.263+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:46:46.280+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T01:47:16.640+0000] {processor.py:186} INFO - Started process (PID=2438) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:47:16.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:47:16.661+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:47:16.659+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:47:16.762+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:47:16.854+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:47:16.854+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:47:16.925+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:47:16.924+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:47:17.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.406 seconds
+[2026-01-10T01:47:47.342+0000] {processor.py:186} INFO - Started process (PID=2502) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:47:47.343+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:47:47.347+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:47:47.346+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:47:47.371+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:47:47.394+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:47:47.394+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:47:47.411+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:47:47.411+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:47:47.435+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.103 seconds
+[2026-01-10T01:48:18.093+0000] {processor.py:186} INFO - Started process (PID=2566) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:48:18.099+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:48:18.113+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:48:18.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:48:18.157+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:48:18.181+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:48:18.180+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:48:18.199+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:48:18.199+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:48:18.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.160 seconds
+[2026-01-10T01:48:48.798+0000] {processor.py:186} INFO - Started process (PID=2631) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:48:48.804+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:48:48.816+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:48:48.815+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:48:48.926+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:48:49.035+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:48:49.033+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:48:49.112+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:48:49.111+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:48:49.161+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.396 seconds
+[2026-01-10T01:49:19.823+0000] {processor.py:186} INFO - Started process (PID=2695) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:49:19.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:49:19.826+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:49:19.826+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:49:19.847+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:49:19.867+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:49:19.867+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:49:19.882+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:49:19.881+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:49:19.903+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.087 seconds
+[2026-01-10T01:49:50.277+0000] {processor.py:186} INFO - Started process (PID=2759) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:49:50.278+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:49:50.280+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:49:50.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:49:50.299+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:49:50.315+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:49:50.315+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:49:50.328+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:49:50.328+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:49:50.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.077 seconds
+[2026-01-10T01:50:20.615+0000] {processor.py:186} INFO - Started process (PID=2823) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:50:20.616+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:50:20.619+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:50:20.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:50:20.638+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:50:20.654+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:50:20.654+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:50:20.667+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:50:20.666+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:50:20.685+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.076 seconds
+[2026-01-10T01:50:50.899+0000] {processor.py:186} INFO - Started process (PID=2887) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:50:50.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:50:50.902+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:50:50.902+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:50:50.920+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:50:50.935+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:50:50.935+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:50:50.946+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:50:50.946+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:50:50.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T01:51:21.536+0000] {processor.py:186} INFO - Started process (PID=2951) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:51:21.538+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:51:21.540+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:51:21.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:51:21.553+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:51:21.568+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:51:21.568+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:51:21.579+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:51:21.579+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:51:21.597+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T01:51:52.159+0000] {processor.py:186} INFO - Started process (PID=3015) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:51:52.160+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:51:52.162+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:51:52.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:51:52.176+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:51:52.193+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:51:52.192+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:51:52.205+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:51:52.205+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:51:52.220+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T01:52:22.783+0000] {processor.py:186} INFO - Started process (PID=3079) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:52:22.784+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:52:22.786+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:52:22.786+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:52:22.800+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:52:22.816+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:52:22.816+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:52:22.827+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:52:22.827+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:52:22.844+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.067 seconds
+[2026-01-10T01:52:53.079+0000] {processor.py:186} INFO - Started process (PID=3143) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:52:53.080+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:52:53.082+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:52:53.082+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:52:53.096+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:52:53.112+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:52:53.112+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:52:53.124+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:52:53.123+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:52:53.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.064 seconds
+[2026-01-10T01:53:23.274+0000] {processor.py:186} INFO - Started process (PID=3207) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:53:23.275+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:53:23.277+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:53:23.276+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:53:23.293+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:53:23.311+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:53:23.311+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:53:23.326+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:53:23.326+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:53:23.347+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.079 seconds
+[2026-01-10T01:53:53.477+0000] {processor.py:186} INFO - Started process (PID=3271) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:53:53.478+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:53:53.482+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:53:53.482+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:53:53.501+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:53:53.521+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:53:53.521+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:53:53.536+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:53:53.536+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:53:53.558+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.087 seconds
+[2026-01-10T01:54:23.894+0000] {processor.py:186} INFO - Started process (PID=3336) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:54:23.895+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:54:23.897+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:54:23.897+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:54:23.911+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:54:23.926+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:54:23.926+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:54:23.938+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:54:23.938+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:54:23.955+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T01:54:54.563+0000] {processor.py:186} INFO - Started process (PID=3400) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:54:54.564+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:54:54.566+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:54:54.566+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:54:54.580+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:54:54.594+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:54:54.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:54:54.605+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:54:54.605+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:54:54.623+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T01:55:25.096+0000] {processor.py:186} INFO - Started process (PID=3464) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:55:25.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:55:25.101+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:55:25.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:55:25.117+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:55:25.138+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:55:25.138+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:55:25.156+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:55:25.156+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:55:25.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.087 seconds
+[2026-01-10T01:55:55.941+0000] {processor.py:186} INFO - Started process (PID=3528) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:55:55.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:55:55.946+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:55:55.946+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:55:55.963+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:55:55.983+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:55:55.983+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:55:55.998+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:55:55.997+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:55:56.016+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.083 seconds
+[2026-01-10T01:56:26.662+0000] {processor.py:186} INFO - Started process (PID=3592) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:56:26.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:56:26.666+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:56:26.666+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:56:26.683+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:56:26.699+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:56:26.699+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:56:26.713+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:56:26.712+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:56:26.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.076 seconds
+[2026-01-10T01:58:56.942+0000] {processor.py:186} INFO - Started process (PID=61) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:58:56.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:58:56.946+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:58:56.945+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:58:56.974+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:58:57.008+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:58:57.007+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:58:57.190+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:58:57.189+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:58:57.206+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.270 seconds
+[2026-01-10T01:59:27.751+0000] {processor.py:186} INFO - Started process (PID=125) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:59:27.752+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:59:27.755+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:59:27.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:59:27.771+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:59:27.791+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:59:27.791+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:59:27.805+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:59:27.805+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:59:27.823+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.080 seconds
+[2026-01-10T01:59:58.008+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:59:58.009+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T01:59:58.011+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:59:58.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:59:58.024+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T01:59:58.038+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:59:58.038+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T01:59:58.049+0000] {logging_mixin.py:190} INFO - [2026-01-10T01:59:58.049+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T01:59:58.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.063 seconds
+[2026-01-10T02:00:28.764+0000] {processor.py:186} INFO - Started process (PID=253) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:00:28.765+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:00:28.768+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:00:28.767+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:00:28.784+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:00:28.804+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:00:28.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:00:28.818+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:00:28.818+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:00:28.834+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.078 seconds
+[2026-01-10T02:00:59.142+0000] {processor.py:186} INFO - Started process (PID=317) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:00:59.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:00:59.147+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:00:59.146+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:00:59.169+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:00:59.193+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:00:59.193+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:00:59.209+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:00:59.209+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:00:59.235+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.102 seconds
+[2026-01-10T02:01:29.595+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:01:29.596+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:01:29.599+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:01:29.599+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:01:29.616+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:01:29.634+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:01:29.633+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:01:29.647+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:01:29.647+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:01:29.670+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.081 seconds
+[2026-01-10T02:02:00.444+0000] {processor.py:186} INFO - Started process (PID=445) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:02:00.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:02:00.450+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:02:00.449+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:02:00.468+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:02:00.489+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:02:00.489+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:02:00.505+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:02:00.505+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:02:00.525+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.087 seconds
+[2026-01-10T02:02:30.567+0000] {processor.py:186} INFO - Started process (PID=509) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:02:30.569+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:02:30.572+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:02:30.572+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:02:30.589+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:02:30.607+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:02:30.607+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:02:30.621+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:02:30.621+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:02:30.640+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.080 seconds
+[2026-01-10T02:03:00.869+0000] {processor.py:186} INFO - Started process (PID=573) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:03:00.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:03:00.872+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:03:00.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:03:00.887+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:03:00.904+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:03:00.903+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:03:00.917+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:03:00.917+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:03:00.937+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:03:31.792+0000] {processor.py:186} INFO - Started process (PID=637) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:03:31.793+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:03:31.797+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:03:31.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:03:31.814+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:03:31.831+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:03:31.831+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:03:31.844+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:03:31.844+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:03:31.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.076 seconds
+[2026-01-10T02:04:02.777+0000] {processor.py:186} INFO - Started process (PID=701) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:04:02.778+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:04:02.780+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:04:02.780+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:04:02.795+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:04:02.811+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:04:02.811+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:04:02.825+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:04:02.824+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:04:02.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.078 seconds
+[2026-01-10T02:04:33.399+0000] {processor.py:186} INFO - Started process (PID=765) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:04:33.400+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:04:33.403+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:04:33.402+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:04:33.417+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:04:33.435+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:04:33.434+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:04:33.447+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:04:33.447+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:04:33.465+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.073 seconds
+[2026-01-10T02:05:04.154+0000] {processor.py:186} INFO - Started process (PID=829) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:05:04.155+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:05:04.157+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:05:04.157+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:05:04.170+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:05:04.186+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:05:04.185+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:05:04.197+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:05:04.197+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:05:04.214+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:05:35.096+0000] {processor.py:186} INFO - Started process (PID=893) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:05:35.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:05:35.100+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:05:35.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:05:35.114+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:05:35.130+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:05:35.130+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:05:35.144+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:05:35.144+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:05:35.162+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.072 seconds
+[2026-01-10T02:06:06.010+0000] {processor.py:186} INFO - Started process (PID=957) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:06:06.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:06:06.014+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:06:06.014+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:06:06.030+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:06:06.046+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:06:06.046+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:06:06.059+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:06:06.058+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:06:06.075+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T02:06:36.874+0000] {processor.py:186} INFO - Started process (PID=1021) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:06:36.875+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:06:36.878+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:06:36.878+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:06:36.892+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:06:36.908+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:06:36.908+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:06:36.919+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:06:36.919+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:06:36.935+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.067 seconds
+[2026-01-10T02:07:07.703+0000] {processor.py:186} INFO - Started process (PID=1085) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:07:07.704+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:07:07.708+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:07:07.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:07:07.723+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:07:07.739+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:07:07.739+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:07:07.752+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:07:07.752+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:07:07.772+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.074 seconds
+[2026-01-10T02:07:38.245+0000] {processor.py:186} INFO - Started process (PID=1149) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:07:38.246+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:07:38.249+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:07:38.249+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:07:38.265+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:07:38.285+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:07:38.285+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:07:38.299+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:07:38.298+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:07:38.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.079 seconds
+[2026-01-10T02:08:08.859+0000] {processor.py:186} INFO - Started process (PID=1213) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:08:08.860+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:08:08.863+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:08:08.863+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:08:08.883+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:08:08.905+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:08:08.905+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:08:08.922+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:08:08.922+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:08:08.943+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.091 seconds
+[2026-01-10T02:08:39.138+0000] {processor.py:186} INFO - Started process (PID=1277) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:08:39.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:08:39.142+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:08:39.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:08:39.157+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:08:39.171+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:08:39.171+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:08:39.184+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:08:39.183+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:08:39.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:09:09.443+0000] {processor.py:186} INFO - Started process (PID=1341) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:09:09.444+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:09:09.446+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:09:09.446+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:09:09.459+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:09:09.474+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:09:09.474+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:09:09.485+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:09:09.485+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:09:09.500+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.063 seconds
+[2026-01-10T02:09:40.398+0000] {processor.py:186} INFO - Started process (PID=1405) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:09:40.399+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:09:40.401+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:09:40.401+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:09:40.416+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:09:40.430+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:09:40.430+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:09:40.442+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:09:40.442+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:09:40.459+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:10:10.493+0000] {processor.py:186} INFO - Started process (PID=1469) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:10:10.494+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:10:10.496+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:10:10.496+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:10:10.509+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:10:10.524+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:10:10.523+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:10:10.535+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:10:10.535+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:10:10.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:10:41.247+0000] {processor.py:186} INFO - Started process (PID=1533) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:10:41.248+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:10:41.250+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:10:41.250+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:10:41.264+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:10:41.278+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:10:41.278+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:10:41.289+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:10:41.289+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:10:41.305+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.064 seconds
+[2026-01-10T02:11:11.475+0000] {processor.py:186} INFO - Started process (PID=1597) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:11:11.476+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:11:11.479+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:11:11.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:11:11.493+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:11:11.508+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:11:11.508+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:11:11.520+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:11:11.520+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:11:11.537+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T02:11:41.968+0000] {processor.py:186} INFO - Started process (PID=1661) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:11:41.969+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:11:41.971+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:11:41.971+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:11:41.987+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:11:42.002+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:11:42.002+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:11:42.015+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:11:42.014+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:11:42.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:12:12.973+0000] {processor.py:186} INFO - Started process (PID=1725) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:12:12.974+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:12:12.976+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:12:12.976+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:12:12.993+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:12:13.012+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:12:13.012+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:12:13.026+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:12:13.026+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:12:13.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:12:43.911+0000] {processor.py:186} INFO - Started process (PID=1789) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:12:43.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:12:43.914+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:12:43.914+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:12:43.927+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:12:43.941+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:12:43.941+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:12:43.953+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:12:43.953+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:12:43.969+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.063 seconds
+[2026-01-10T02:13:14.040+0000] {processor.py:186} INFO - Started process (PID=1853) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:13:14.041+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:13:14.043+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:13:14.043+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:13:14.056+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:13:14.071+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:13:14.071+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:13:14.083+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:13:14.083+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:13:14.099+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:13:44.312+0000] {processor.py:186} INFO - Started process (PID=1917) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:13:44.313+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:13:44.315+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:13:44.315+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:13:44.330+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:13:44.345+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:13:44.344+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:13:44.356+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:13:44.356+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:13:44.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:14:14.713+0000] {processor.py:186} INFO - Started process (PID=1981) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:14:14.714+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:14:14.716+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:14:14.716+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:14:14.730+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:14:14.747+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:14:14.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:14:14.760+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:14:14.759+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:14:14.774+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.067 seconds
+[2026-01-10T02:14:45.188+0000] {processor.py:186} INFO - Started process (PID=2045) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:14:45.189+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:14:45.192+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:14:45.191+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:14:45.207+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:14:45.224+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:14:45.224+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:14:45.238+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:14:45.237+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:14:45.256+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.074 seconds
+[2026-01-10T02:15:16.262+0000] {processor.py:186} INFO - Started process (PID=2109) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:15:16.263+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:15:16.265+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:15:16.265+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:15:16.280+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:15:16.295+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:15:16.295+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:15:16.307+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:15:16.307+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:15:16.324+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T02:15:46.570+0000] {processor.py:186} INFO - Started process (PID=2173) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:15:46.571+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:15:46.573+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:15:46.573+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:15:46.586+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:15:46.602+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:15:46.602+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:15:46.613+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:15:46.613+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:15:46.629+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:16:17.067+0000] {processor.py:186} INFO - Started process (PID=2237) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:16:17.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:16:17.070+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:16:17.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:16:17.083+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:16:17.097+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:16:17.097+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:16:17.108+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:16:17.108+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:16:17.125+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.064 seconds
+[2026-01-10T02:16:47.659+0000] {processor.py:186} INFO - Started process (PID=2301) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:16:47.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:16:47.663+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:16:47.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:16:47.681+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:16:47.703+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:16:47.702+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:16:47.719+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:16:47.718+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:16:47.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.087 seconds
+[2026-01-10T02:17:17.780+0000] {processor.py:186} INFO - Started process (PID=2365) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:17:17.781+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:17:17.783+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:17:17.783+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:17:17.797+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:17:17.812+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:17:17.812+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:17:17.825+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:17:17.825+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:17:17.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.069 seconds
+[2026-01-10T02:17:48.637+0000] {processor.py:186} INFO - Started process (PID=2430) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:17:48.638+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:17:48.640+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:17:48.640+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:17:48.654+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:17:48.670+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:17:48.670+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:17:48.683+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:17:48.682+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:17:48.701+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.069 seconds
+[2026-01-10T02:18:19.293+0000] {processor.py:186} INFO - Started process (PID=2494) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:18:19.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:18:19.298+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:18:19.297+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:18:19.318+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:18:19.340+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:18:19.340+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:18:19.357+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:18:19.357+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:18:19.383+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.097 seconds
+[2026-01-10T02:18:50.126+0000] {processor.py:186} INFO - Started process (PID=2558) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:18:50.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:18:50.129+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:18:50.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:18:50.143+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:18:50.157+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:18:50.157+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:18:50.169+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:18:50.169+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:18:50.185+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:19:21.199+0000] {processor.py:186} INFO - Started process (PID=2622) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:19:21.200+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:19:21.202+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:19:21.202+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:19:21.216+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:19:21.231+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:19:21.230+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:19:21.242+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:19:21.241+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:19:21.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:19:52.037+0000] {processor.py:186} INFO - Started process (PID=2686) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:19:52.038+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:19:52.040+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:19:52.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:19:52.056+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:19:52.072+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:19:52.072+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:19:52.086+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:19:52.086+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:19:52.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.074 seconds
+[2026-01-10T02:20:22.679+0000] {processor.py:186} INFO - Started process (PID=2750) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:20:22.680+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:20:22.682+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:20:22.682+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:20:22.696+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:20:22.712+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:20:22.712+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:20:22.724+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:20:22.723+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:20:22.740+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:20:53.506+0000] {processor.py:186} INFO - Started process (PID=2815) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:20:53.507+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:20:53.509+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:20:53.509+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:20:53.522+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:20:53.536+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:20:53.536+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:20:53.547+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:20:53.547+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:20:53.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:21:23.717+0000] {processor.py:186} INFO - Started process (PID=2880) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:21:23.718+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:21:23.720+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:21:23.720+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:21:23.735+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:21:23.749+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:21:23.749+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:21:23.762+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:21:23.762+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:21:23.781+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.069 seconds
+[2026-01-10T02:21:54.463+0000] {processor.py:186} INFO - Started process (PID=2944) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:21:54.464+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:21:54.467+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:21:54.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:21:54.481+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:21:54.498+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:21:54.498+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:21:54.513+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:21:54.513+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:21:54.532+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:22:25.054+0000] {processor.py:186} INFO - Started process (PID=3008) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:22:25.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:22:25.057+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:22:25.056+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:22:25.072+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:22:25.090+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:22:25.090+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:22:25.103+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:22:25.103+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:22:25.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.073 seconds
+[2026-01-10T02:22:55.616+0000] {processor.py:186} INFO - Started process (PID=3072) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:22:55.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:22:55.619+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:22:55.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:22:55.632+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:22:55.647+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:22:55.647+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:22:55.659+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:22:55.659+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:22:55.675+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:23:26.273+0000] {processor.py:186} INFO - Started process (PID=3136) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:23:26.274+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:23:26.276+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:23:26.276+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:23:26.293+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:23:26.309+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:23:26.309+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:23:26.321+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:23:26.321+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:23:26.340+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.073 seconds
+[2026-01-10T02:23:56.614+0000] {processor.py:186} INFO - Started process (PID=3200) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:23:56.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:23:56.617+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:23:56.617+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:23:56.633+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:23:56.649+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:23:56.649+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:23:56.662+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:23:56.662+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:23:56.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:24:27.155+0000] {processor.py:186} INFO - Started process (PID=3264) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:24:27.156+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:24:27.159+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:24:27.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:24:27.173+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:24:27.188+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:24:27.188+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:24:27.203+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:24:27.203+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:24:27.220+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T02:24:57.835+0000] {processor.py:186} INFO - Started process (PID=3328) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:24:57.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:24:57.838+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:24:57.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:24:57.853+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:24:57.869+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:24:57.868+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:24:57.881+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:24:57.881+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:24:57.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T02:25:28.501+0000] {processor.py:186} INFO - Started process (PID=3392) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:25:28.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:25:28.505+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:25:28.505+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:25:28.520+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:25:28.536+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:25:28.536+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:25:28.548+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:25:28.548+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:25:28.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T02:25:58.852+0000] {processor.py:186} INFO - Started process (PID=3456) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:25:58.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:25:58.857+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:25:58.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:25:58.875+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:25:58.895+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:25:58.895+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:25:58.909+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:25:58.909+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:25:58.928+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.084 seconds
+[2026-01-10T02:26:29.419+0000] {processor.py:186} INFO - Started process (PID=3520) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:26:29.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:26:29.422+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:26:29.422+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:26:29.436+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:26:29.453+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:26:29.453+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:26:29.464+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:26:29.464+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:26:29.482+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.068 seconds
+[2026-01-10T02:27:00.008+0000] {processor.py:186} INFO - Started process (PID=3584) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:27:00.009+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:27:00.012+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:27:00.011+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:27:00.026+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:27:00.043+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:27:00.043+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:27:00.056+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:27:00.056+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:27:00.073+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T02:27:30.209+0000] {processor.py:186} INFO - Started process (PID=3648) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:27:30.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:27:30.214+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:27:30.213+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:27:30.234+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:27:30.257+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:27:30.257+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:27:30.269+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:27:30.268+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:27:30.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.084 seconds
+[2026-01-10T02:28:00.951+0000] {processor.py:186} INFO - Started process (PID=3712) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:28:00.952+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:28:00.956+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:28:00.955+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:28:00.972+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:28:00.991+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:28:00.990+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:28:01.004+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:28:01.004+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:28:01.024+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.080 seconds
+[2026-01-10T02:28:31.479+0000] {processor.py:186} INFO - Started process (PID=3776) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:28:31.480+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:28:31.483+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:28:31.483+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:28:31.500+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:28:31.521+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:28:31.521+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:28:31.536+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:28:31.536+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:28:31.556+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.086 seconds
+[2026-01-10T02:29:01.742+0000] {processor.py:186} INFO - Started process (PID=3840) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:29:01.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:29:01.745+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:29:01.745+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:29:01.760+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:29:01.775+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:29:01.775+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:29:01.786+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:29:01.786+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:29:01.803+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:29:32.008+0000] {processor.py:186} INFO - Started process (PID=3904) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:29:32.009+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:29:32.011+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:29:32.011+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:29:32.027+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:29:32.044+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:29:32.044+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:29:32.056+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:29:32.056+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:29:32.073+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T02:30:02.499+0000] {processor.py:186} INFO - Started process (PID=3968) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:30:02.500+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:30:02.503+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:30:02.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:30:02.524+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:30:02.543+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:30:02.542+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:30:02.558+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:30:02.557+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:30:02.579+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.087 seconds
+[2026-01-10T02:30:32.617+0000] {processor.py:186} INFO - Started process (PID=4033) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:30:32.618+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:30:32.621+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:30:32.620+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:30:32.635+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:30:32.652+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:30:32.652+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:30:32.664+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:30:32.664+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:30:32.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T02:31:02.957+0000] {processor.py:186} INFO - Started process (PID=4097) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:31:02.959+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:31:02.961+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:31:02.961+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:31:02.978+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:31:02.996+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:31:02.996+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:31:03.008+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:31:03.008+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:31:03.025+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:31:33.428+0000] {processor.py:186} INFO - Started process (PID=4161) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:31:33.429+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:31:33.431+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:31:33.431+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:31:33.446+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:31:33.462+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:31:33.462+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:31:33.475+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:31:33.475+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:31:33.492+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T02:32:03.702+0000] {processor.py:186} INFO - Started process (PID=4225) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:32:03.703+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:32:03.706+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:32:03.705+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:32:03.722+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:32:03.738+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:32:03.738+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:32:03.750+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:32:03.750+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:32:03.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T02:32:34.683+0000] {processor.py:186} INFO - Started process (PID=4283) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:32:34.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:32:34.688+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:32:34.687+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:32:34.705+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:32:34.722+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:32:34.721+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:32:34.736+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:32:34.735+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:32:34.750+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.074 seconds
+[2026-01-10T02:33:04.926+0000] {processor.py:186} INFO - Started process (PID=4334) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:33:04.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:33:04.929+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:33:04.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:33:04.943+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:33:04.958+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:33:04.957+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:33:04.969+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:33:04.969+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:33:04.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:33:35.299+0000] {processor.py:186} INFO - Started process (PID=4398) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:33:35.300+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:33:35.303+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:33:35.302+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:33:35.319+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:33:35.335+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:33:35.335+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:33:35.348+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:33:35.348+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:33:35.363+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.069 seconds
+[2026-01-10T02:34:05.847+0000] {processor.py:186} INFO - Started process (PID=4453) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:34:05.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:34:05.851+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:34:05.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:34:05.865+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:34:05.882+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:34:05.882+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:34:05.895+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:34:05.895+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:34:05.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.072 seconds
+[2026-01-10T02:34:36.354+0000] {processor.py:186} INFO - Started process (PID=4518) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:34:36.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:34:36.358+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:34:36.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:34:36.376+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:34:36.396+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:34:36.396+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:34:36.410+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:34:36.410+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:34:36.428+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.082 seconds
+[2026-01-10T02:35:06.833+0000] {processor.py:186} INFO - Started process (PID=4582) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:35:06.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:35:06.836+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:35:06.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:35:06.852+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:35:06.868+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:35:06.868+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:35:06.880+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:35:06.880+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:35:06.898+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.071 seconds
+[2026-01-10T02:35:37.266+0000] {processor.py:186} INFO - Started process (PID=4646) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:35:37.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:35:37.269+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:35:37.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:35:37.283+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:35:37.298+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:35:37.298+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:35:37.309+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:35:37.309+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:35:37.325+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.065 seconds
+[2026-01-10T02:36:07.604+0000] {processor.py:186} INFO - Started process (PID=4710) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:36:07.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:36:07.608+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:36:07.607+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:36:07.621+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:36:07.637+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:36:07.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:36:07.648+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:36:07.648+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:36:07.664+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:36:37.841+0000] {processor.py:186} INFO - Started process (PID=4774) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:36:37.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:36:37.844+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:36:37.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:36:37.857+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:36:37.872+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:36:37.872+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:36:37.884+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:36:37.883+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:36:37.901+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:37:08.130+0000] {processor.py:186} INFO - Started process (PID=4838) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:37:08.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:37:08.133+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:37:08.133+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:37:08.147+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:37:08.162+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:37:08.162+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:37:08.175+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:37:08.175+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:37:08.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.064 seconds
+[2026-01-10T02:37:38.633+0000] {processor.py:186} INFO - Started process (PID=4902) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:37:38.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:37:38.637+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:37:38.637+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:37:38.650+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:37:38.664+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:37:38.664+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:37:38.676+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:37:38.675+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:37:38.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:38:09.659+0000] {processor.py:186} INFO - Started process (PID=4966) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:38:09.661+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:38:09.665+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:38:09.664+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:38:09.683+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:38:09.703+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:38:09.703+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:38:09.718+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:38:09.717+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:38:09.738+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.086 seconds
+[2026-01-10T02:38:39.887+0000] {processor.py:186} INFO - Started process (PID=5030) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:38:39.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:38:39.891+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:38:39.891+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:38:39.907+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:38:39.924+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:38:39.924+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:38:39.937+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:38:39.937+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:38:39.955+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:39:10.190+0000] {processor.py:186} INFO - Started process (PID=5094) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:39:10.191+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:39:10.194+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:39:10.193+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:39:10.208+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:39:10.225+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:39:10.225+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:39:10.238+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:39:10.237+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:39:10.256+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.072 seconds
+[2026-01-10T02:39:40.985+0000] {processor.py:186} INFO - Started process (PID=5158) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:39:40.986+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:39:40.988+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:39:40.988+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:39:41.002+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:39:41.017+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:39:41.017+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:39:41.032+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:39:41.032+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:39:41.049+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T02:40:11.646+0000] {processor.py:186} INFO - Started process (PID=5222) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:40:11.647+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:40:11.650+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:40:11.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:40:11.667+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:40:11.683+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:40:11.683+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:40:11.697+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:40:11.697+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:40:11.714+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.075 seconds
+[2026-01-10T02:40:42.038+0000] {processor.py:186} INFO - Started process (PID=5286) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:40:42.039+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:40:42.041+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:40:42.041+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:40:42.057+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:40:42.073+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:40:42.073+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:40:42.085+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:40:42.084+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:40:42.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.070 seconds
+[2026-01-10T02:41:12.651+0000] {processor.py:186} INFO - Started process (PID=5350) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:41:12.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:41:12.654+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:41:12.653+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:41:12.668+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:41:12.683+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:41:12.683+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:41:12.695+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:41:12.695+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:41:12.711+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.066 seconds
+[2026-01-10T02:41:43.485+0000] {processor.py:186} INFO - Started process (PID=5414) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:41:43.486+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:41:43.488+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:41:43.488+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:41:43.502+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:41:43.517+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:41:43.517+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:41:43.530+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:41:43.529+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:41:43.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.067 seconds
+[2026-01-10T02:42:14.168+0000] {processor.py:186} INFO - Started process (PID=5484) to work on /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:42:14.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/payment_batch_dag.py for tasks to queue
+[2026-01-10T02:42:14.171+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:42:14.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:42:14.189+0000] {processor.py:925} INFO - DAG(s) 'payment_processor' retrieved from /opt/airflow/dags/payment_batch_dag.py
+[2026-01-10T02:42:14.209+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:42:14.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-01-10T02:42:14.225+0000] {logging_mixin.py:190} INFO - [2026-01-10T02:42:14.225+0000] {dag.py:4180} INFO - Setting next_dagrun for payment_processor to None, run_after=None
+[2026-01-10T02:42:14.244+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/payment_batch_dag.py took 0.083 seconds
